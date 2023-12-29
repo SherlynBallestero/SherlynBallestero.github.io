@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Para mi amor</title>
+<style>
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: antiquewhite;
+}
+h1 {
+  font-size: 40px;
+}
+p {
+  font-size: 20px;
+}
+.heart {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 0 auto;
+  position: relative;
+  transform: rotate(45deg);
+}
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.heart::before {
+  border-radius: 50% 50% 0 0;
+  top: -50px;
+  left: 0;
+}
+.heart::after {
+  border-radius: 50% 50% 50% 0;
+  top: 0;
+  left: 50px;
+}
+</style>`
+<h1>Te amo mucho</h1>
+</head>
+<body>
+
+<div>
+    .
+</div>
+
+
+<div class="heart"></div>
+<script>
+var heart = document.querySelector(".heart");
+function animateHeart() {
+  heart.style.transform = "scale(1.0)";
+  setTimeout(function() {
+    heart.style.transform = "scale(0.5)";
+    setTimeout(function() {
+      heart.style.transform = "scale(1.0)";
+      animateHeart();
+    }, 800);
+  }, 500);
+}
+animateHeart();
+</script>
+<p style="margin: 20 auto">Cuenta la leyenda que cuando un pinguino elige a su pareja este le regala una piedra como símbolo de su lealtad.En febrero de 2023 sin saberlo te elegí, como eligen los pinguinos a sus compañeros de vida, con una piedra negra, que representa el suelo sobre el cual construiríamos nuestro futuro juntos. Hacía ya mucho tiempo que había perdido las esperanzas en el amor, y la verdad no engañamos a nadie esta relación no es perfecta, pero cada día estoy más segura que juntos podemos lograr que lo perfecto se quede corto. Y yo se perfectamente que una relación a distancia no es el paraíso, que aun quedan muchas batallas por librar, que puede ser que si convivimos te asesine por ciertas mañas, pero también sé que arriesgaría mi vida una y otra vez para poder despertar cada día a tu lado</p>
+<a href="#" onclick="changeContent()" id="lol2">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  Ver Recuerdos
+</a>
+
+
+<script>
+      
+  function changeContent() {
+  
+      alert("Recuerda que te amo")
+      window.open("recuerdos.html", "Nueva ventana", "width=700,height=700");
+        
+  }
+</script>
+</body>
+
+</html>
