@@ -1,213 +1,33 @@
+<!DOCTYPE html>
+<html>
 
-<!DOCTYPE>
 <head>
-<title>Para mi pinguinito</title>
-<style>
-  html {
-    height: 100%;
-  }
-  body {
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
-    background: linear-gradient(#141e30, #243b55);
-  }
-  
-  .login-box {
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    background: rgba(0,0,0,.5);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
-  }
-  
-  .login-box h2 {
-    margin: 0 0 30px;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .login-box .user-box {
-    position: relative;
-  }
-  
-  .login-box .user-box input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-  }
-  .login-box .user-box label {
-    position: absolute;
-    top:0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-  }
-  
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
-    top: -20px;
-    left: 0;
-    color: #03e9f4;
-    font-size: 12px;
-  }
-  
-  .login-box form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px
-  }
-  
-  .login-box a:hover {
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
-  }
-  
-  .login-box a span {
-    position: absolute;
-    display: block;
-  }
-  
-  .login-box a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
-    animation: btn-anim1 1s linear infinite;
-  }
-  
-  @keyframes btn-anim1 {
-    0% {
-      left: -100%;
-    }
-    50%,100% {
-      left: 100%;
-    }
-  }
-  
-  .login-box a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s
-  }
-  
-  @keyframes btn-anim2 {
-    0% {
-      top: -100%;
-    }
-    50%,100% {
-      top: 100%;
-    }
-  }
-  
-  .login-box a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s
-  }
-  
-  @keyframes btn-anim3 {
-    0% {
-      right: -100%;
-    }
-    50%,100% {
-      right: 100%;
-    }
-  }
-  
-  .login-box a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s
-  }
-  
-  @keyframes btn-anim4 {
-    0% {
-      bottom: -100%;
-    }
-    50%,100% {
-      bottom: 100%;
-    }
-  }
-  
-</style>
+    <title>Inversión Extranjera</title>
+    <link rel="stylesheet" type="text/css" href="principalStyle.css">
+     <h1 id="TextoPrincipal"> Inversión Extranjera en Cuba: Una Mirada al Futuro</h1>
+    
+    <img  id="imagenPortada"   src="img/principal13.jpeg" alt="La Habana, Cuba">
 </head>
 <body>
-  <div class="login-box">
-    <h2>Do you want come in?</h2>
-    <form>
-      <div class="user-box">
-        <input type="text" name="" required="" id="user">
-        <label>Username</label>
-      </div>
-      <div class="user-box">
-        <input type="password" name="" required="" id="pass">
-        <label>Password</label>
-      </div>
-      <a href="#" onclick="changeContent(document.getElementById('user').value,document.getElementById('pass').value)" id="lol">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Loguin
-      </a>
-    </form>
-    <script>
-      
-      function changeContent(user, pass) {
-        if (user==="Rene" && pass==="rene1018" ){
-          alert("You are welcome")
-          
-          window.open("cartaAmor.html", "Nueva ventana", "width=100%,height=100%");
-        }else{
-          
-          alert("Nice try");
-        }
-        
+    
+<div id="TextoPrincipal2">
+    
+    
+    <h1>El Impacto de las Políticas de Inversión Extranjera en el Desarrollo Económico Cubano</h1>
+    <p>La inversión extranjera juega un papel crucial en el desarrollo de ciertos sectores de la economía cubana. Con la implementación del nuevo marco legal para la inversión extranjera, se han despertado intereses significativos en actividades y sectores como la exploración de hidrocarburos, la generación eléctrica a partir de fuentes renovables, la industria alimentaria, la agricultura, la industria sideromecánica y ligera, la construcción de hoteles y campos de golf, la producción de materiales de la construcción y el comercio mayorista.</p>
+    <p>El Gobierno cubano aprobó en octubre de 2013 la Política de Inversión Extranjera, que reconoce el papel que pueden desempeñar los flujos de capital extranjero para contribuir de manera efectiva a alcanzar los objetivos del desarrollo económico sostenible del país.</p>
+    <p>Actualmente, empresas de varios países están negociando proyectos de inversión en distintos sectores, tanto en la ZEDM (Zona Especial de Desarrollo Mariel) como en el resto del país.</p>
+    <p>Durante la edición de la Feria Internacional de La Habana 2014 se publicó la nueva Cartera de Oportunidades de Inversión Extranjera y la Guía del Inversionista, documentos que facilitan la promoción y la atracción de inversión extranjera hacia el país. La Cartera de Oportunidades de Inversión Extranjera muestra los proyectos de negocios con capital extranjero disponibles en el país. Actualmente tiene más de quinientos proyectos, distribuidos por sectores prioritarios para la economía nacional.</p>
+    <p>Entre las ventajas de invertir en Cuba se destaca un ambiente de negocios favorable que se genera con la aprobación de la Ley No. 118 y sus normas complementarias. A los incentivos fiscales ofrecidos se añaden otras ventajas que motivan a los inversionistas extranjeros a elegir a Cuba como destino de inversión, entre ellas: un marco legal seguro y transparente, una estabilidad política, social y jurídica, una ubicación geográfica en el centro de un mercado en crecimiento, un clima de seguridad para el personal extranjero y una mano de obra altamente calificada, entre otras</p>
+    <p>A partir de los datos obtenidos de las diferentes Carteras de oportunidades publicadas, se ha creado una aplicación interactiva, donde se pueden conocer las distintas oportunidades de inversión en Cuba desde el año 2014, y se pueden analizar detalles como la modalidad que predomina o los sectores más atractivos para los inversores extranjeros, así como los reportes de ventas en cada año.</p>
+</div>
+<button id="miBoton">Ver Oportunidades</button>
 
-      }
-    </script>
-  </div>
+<script>
+document.getElementById('miBoton').onclick = function () {
+   location.href = 'oportunidades.html';
+};
+</script>
+
 </body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    background-color: #faf6fa;
+  }
+#TextoPrincipal{
+    margin-top: 150px;
+    text-align: center; 
+    font-family: cursive; 
+    font-size: 50px; 
+    color: #160303; 
+    top:10%;
+}
+#TextoPrincipal2{
+    text-align: center;
+    font-family: cursive;
+    font-size: 24px;
+    padding: 0% 10% 0% 10%;
+}
+#imagenPortada{
+    width: 100%;
+    position:relative;
+
+}
+#miBoton{
+    display: block;
+    padding: 5px 10px;
+    background-image: linear-gradient(to right, #f9fbfbf1, #b8e0fb);
+    border-radius: 5px;
+    color: rgb(0, 9, 128);
+    font-weight: bold;
+    text-decoration:wavy;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 50px;
+    margin-left: 45%;
+}
