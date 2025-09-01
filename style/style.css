@@ -114,6 +114,52 @@ nav a {
     z-index: 3; /* Sobre todo lo demás */
     margin-bottom: 10px; /* Espacio debajo de la imagen */
     top:120px;
+    /* Responsive main image for homepage */
+    .responsive-img {
+        width: 100%;
+        max-width: 1200px;
+        height: 60vh;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+
+    /* Responsive images in general */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Responsive layout with media queries */
+    @media (max-width: 900px) {
+        .hero-image, .responsive-img {
+            width: 100%;
+            height: 40vh;
+            border-radius: 10px;
+            position: static;
+            top: 0;
+        }
+        .hero-content {
+            padding: 10px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .hero-image, .responsive-img {
+            width: 100%;
+            height: 30vh;
+            border-radius: 5px;
+        }
+        header, nav ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+        h1, h2 {
+            font-size: 1.5em;
+        }
+    }
 }
 
 h1 {
