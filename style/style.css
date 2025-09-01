@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap'); 
+
+ 
+  
+  
+html body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+header {
+    background-color: #F9F8F6;
+    color: #F9F8F6;
+    padding: 25px 20px ;
+    size: 20cm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 10;
+}
+
+.logo_1 {
+    
+    font-family: 'Dancing Script', cursive; 
+    font-weight: 400;  
+    font-size: 50px;   
+    line-height: normal;  
+    letter-spacing: 0%;  
+    color: #000000;       
+    opacity: 1;           
+    text-align: left;  
+    margin: 0; 
+    padding: 0;
+   
+
+}
+
+.logo_2 {
+    
+    font-family: 'Raleway';  
+    font-weight: 400;  
+    font-size: 24px;   
+    position: absolute;
+    left: 45px;
+    line-height: normal; 
+    letter-spacing: 0%;   
+    color: #000000;      
+    opacity: 1;             
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+nav a {
+    text-decoration: none;
+    font-family: 'Dancing Script'; 
+    font-weight: 140px;  
+    font-size: 30px;   
+    line-height: 42px;  
+    letter-spacing: 0%;  
+    color: #000000; 
+    padding: 0%;
+}
+
+.hero {
+    background-image: url('home.jpg'); /* Fondo con la sala y margaritas */
+    background-size:cover; /* Ajusta el tamaño para que no cubra todo, solo se vea bien */
+    background-position: center; /* Centra el fondo */
+    background-repeat: no-repeat; /* Evita repetición */
+    padding: 50px 20px; /* Espacio para el contenido */
+    position: relative; /* Para controlar la superposición */
+    text-align: center;
+    min-height: 500px; /* Asegura suficiente espacio para ver el fondo */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.199); /* Capa blanca con opacidad para difuminar */
+    z-index: 1; /* Debajo del contenido e imagen superpuesta */
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Sobre la capa de opacidad y fondo */
+}
+
+.hero-image {
+    width: 300px; /* Ajusta el tamaño según tu maqueta */
+    height: auto;
+    border-radius: 20px; /* Bordes redondeados como en la imagen */
+    position: absolute; /* Centrado sobre el fondo */
+    z-index: 3; /* Sobre todo lo demás */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+    top:200px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.first_part{
+    padding: 50px 20px; /* Espacio para el contenido */
+    position: relative; /* Para controlar la superposición */
+    text-align: center;
+    color: #F9F8F6;
+    
+}
+.presentation-content{
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2; 
+    color: #F9F8F6;
+
+}
+.get-started {
+    background-color: #526255;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 290px;
+}
+.dancing-typing{
+    font-family: 'Dancing Script', cursive; 
+    font-weight: 400;  
+    font-size: 50px;   
+    line-height: normal;  
+    letter-spacing: 0%;  
+    color: #000000;       
+    opacity: 1;             
+    margin: 0; 
+    padding: 10;
+
+}
+.raleway-typing{
+    font-family: 'Raleway';  
+    font-weight: 400;  
+    font-size: 60px;   
+    position: relative;
+    line-height: normal; 
+    letter-spacing: 0%;   
+    color: #000000;      
+    opacity: 1;             
+    margin: 10;
+    padding: 0;
+}
+.second-part{
+    background-color: #526255;
+    padding: 50px 15px;
+    margin-top: 4%;
+    position: relative;
+
+}
+.questions-content{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #526255;
+    margin-top: 0%;
+}
+
+.question1{
+    position: relative;
+    color: white;
+    font-family: 'Raleway';  
+    font-size: 25px;
+    top:0%;
+    left:20%;
+    
+}
+.question2{
+    position: absolute;
+    color: white;
+    font-family: 'Raleway';  
+    font-size: 25px;
+    top: 0%;
+    left: 45%;
+}
+.question3{
+    position: absolute;
+    color: white;
+    font-family: 'Raleway';  
+    font-size: 25px;
+    top:0%;
+    left: 75%;
+}
+
+.answer1{
+    position: absolute;
+    color: white;
+    font-family: 'Dancing Script';  
+    font-size: 20px;
+    top:50%;
+    left:17%;
+
+}
+.answer2{
+    position: absolute;
+    color: white;
+    font-family: 'Dancing Script';  
+    font-size: 20px;
+    top:50%;
+    left:43%;
+
+}
+.answer3{
+    position: absolute;
+    color: white;
+    font-family: 'Dancing Script';  
+    font-size: 20px;
+    top:50%;
+    left:78%;
+}
+
+.third_part {
+    background-color: #A8C7A8; /* Fondo verde oscuro */
+    padding: 50px 20px;
+    position: relative;
+}
+
+.mission-content {
+    max-width: 1200px; /* Ancho máximo para centrar */
+    margin: 0 auto; /* Centra el contenedor */
+    display: flex; /* Diseño de dos columnas */
+    align-items: center; /* Alinea verticalmente */
+    gap: 20px; /* Espacio entre imagen y texto */
+    position: relative;
+}
+
+.mission-image {
+    flex: 1; /* Ocupa la mitad del espacio */
+    overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+.mission-img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Elimina espacios adicionales */
+}
+
+.mission-text {
+    flex: 1; /* Ocupa la otra mitad */
+    background-color: #A8C7A8; /* Fondo verde claro como en la maqueta */
+    padding: 20px; /* Espacio interno */
+    border-radius: 5px; /* Bordes suaves */
+    text-align: left; /* Alineación del texto */
+    color: #333; /* Color del texto */
+
+}
+
+.mission-text h2 {
+    font-size: 1.8em; /* Tamaño del título */
+    margin-bottom: 5px; /* Espacio debajo del título */
+    color: white;
+    size: 50px;
+    
+    top: 5%;
+    position: absolute;
+    left: 65%;
+}
+
+.how-help-text{
+    color: white;
+    size: 30px;
+    font-family: "Dancing Script";
+    top: 10px;
+    position: absolute;
+    left: 70%;
+    margin-left: 5%;
+    margin-top: 5%;
+
+}
+
+.mission-text p {
+    font-size: 1em; /* Tamaño del párrafo */
+    margin-bottom: 15px; /* Espacio debajo del párrafo */
+}
+
+.see-services {
+    background-color: #526255; /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family:'Dancing Script' ;
+    top:10px;
+    left: 30%;
+    margin-left: 5%;
+    position: relative;
+
+}
+
+.see-services:hover {
+    background-color: #0056b3; /* Cambio al pasar el mouse */
+}
+
+
+.clients-section {
+    background-image: url('clients-backg.png'); /* Fondo */
+    background-size:cover; /* Ajusta el tamaño para que no cubra todo, solo se vea bien */
+    background-position: center; /* Centra el fondo */
+    background-repeat: no-repeat; /* Evita repetición */
+    padding: 50px 20px; /* Espacio para el contenido */
+    position: relative; /* Para controlar la superposición */
+    text-align: center;
+    min-height: 400px; /* Asegura suficiente espacio para ver el fondo */
+}
+
+
+.clients-container {
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    align-items: center; /* Alinea verticalmente */
+    gap: 400px; /* Reducimos el espacio entre imágenes */
+    position: relative;
+    z-index: 1; /* Debajo del texto */
+    max-width: 1100px; /* Limita el ancho total */
+    margin: 0 auto; /* Centra el contenedor */
+    
+  
+}
+
+
+.client-image {
+    flex: 0 0 auto; /* No crece ni se encoge */
+    position: relative;
+    overflow: hidden; /* Contiene la imagen */
+}
+
+.client-img {
+    width: 400px; /* Tamaño uniforme para ambas imágenes */
+    height: auto;
+    display: block;
+    border-radius: 3px; /* Bordes suaves */
+    transition: opacity 0.3s ease; /* Transición suave */
+    position: relative;
+    margin-top: 55%;
+    left: 15px;
+
+}
+
+
+.client-img1 {
+    width: 300px; /* Reducimos el ancho a 250px */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    border-radius: 5px; /* Bordes suaves */
+    transition: opacity 0.3s ease; /* Transición suave */
+    position: relative;
+    margin-top: 10%;
+    top:50%;
+    left: 1%;
+    margin-left: 10%;
+    
+}
+.client-img2 {
+    width: 250px; /* Reducimos el ancho a 250px */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    border-radius: 5px; /* Bordes suaves */
+    transition: opacity 0.3s ease; /* Transición suave */
+    position: relative;
+}
+
+.client-image:hover .client-img {
+    opacity: 0; /* Oculta la imagen original al pasar el mouse */
+}
+
+.client-image:hover .client-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(''); /* Se llenará con JavaScript */
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+
+.clients-text {
+    position: absolute;
+    top: 20px; /* Ajustamos la posición vertical */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6em; /* Reducimos el tamaño del texto */
+    z-index: 2;
+}
+
+.clients-text h2 {
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+.finl-seccion{
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    align-items: center; /* Alinea verticalmente */
+    background-color: #C0C2B1;
+    position: relative;
+    z-index: 1; /* Debajo del texto */
+  
+    margin: 0 auto; /* Centra el contenedor */
+   
+}
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover; /* En móviles, puede cubrir más si es necesario */
+        padding: 30px 10px;
+        min-height: 400px;
+    }
+    .hero-image {
+        width: 250px; /* Reduce tamaño en móviles */
+    }
+}
+
+
+
+footer {
+    background-color: #526255;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Responsive: Para pantallas pequeñas (como móvil) */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+}
