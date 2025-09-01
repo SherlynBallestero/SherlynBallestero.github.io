@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap'); 
-
  
-  
   
 html body {
     font-family: Arial, sans-serif;
@@ -11,6 +9,10 @@ html body {
     color: #333;
     overflow-x: hidden;
     width: 100%;
+}
+/* Global box-sizing to prevent overflow */
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 header {
@@ -144,6 +146,28 @@ nav a {
         .hero-content {
             padding: 10px;
         }
+        .container, .presentation-content, .mission-content, .houses-container, .clients-container {
+            padding: 10px;
+            margin: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        nav ul {
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+        }
+        section, header, footer {
+            padding-left: 5px;
+            padding-right: 5px;
+            margin: 0;
+        }
+        p, h1, h2, button {
+            word-break: break-word;
+            font-size: 1em;
+            text-align: center;
+        }
     }
 
     @media (max-width: 600px) {
@@ -159,9 +183,29 @@ nav a {
         h1, h2 {
             font-size: 1.5em;
         }
+        .container, .presentation-content, .mission-content, .houses-container, .clients-container {
+            padding: 5px;
+            margin: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        section, header, footer {
+            padding-left: 2px;
+            padding-right: 2px;
+            margin: 0;
+        }
+        p, h1, h2, button {
+            word-break: break-word;
+            font-size: 0.95em;
+            text-align: center;
+        }
+        .mission-content, .clients-container {
+            flex-direction: column;
+            align-items: center;
+        }
     }
-}
 
+}
 h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
@@ -226,12 +270,14 @@ h1 {
 
 }
 .questions-content{
-    max-width: 1400px;
-    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height:min-content;    
+    display: grid;
     flex-direction: column;
-    position: relative;
     background-color: #526255;
-    margin-top: 0%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .question1{
@@ -244,7 +290,7 @@ h1 {
     
 }
 .question2{
-    position: absolute;
+    position: relative;
     color: white;
     font-family: 'Raleway';  
     font-size: 25px;
@@ -252,7 +298,7 @@ h1 {
     left: 45%;
 }
 .question3{
-    position: absolute;
+    position: relative;
     color: white;
     font-family: 'Raleway';  
     font-size: 25px;
@@ -261,29 +307,29 @@ h1 {
 }
 
 .answer1{
-    position: absolute;
+    position: relative;
     color: white;
     font-family: 'Dancing Script';  
     font-size: 20px;
-    top:50%;
+    top:25%;
     left:17%;
 
 }
 .answer2{
-    position: absolute;
+    position: relative;
     color: white;
     font-family: 'Dancing Script';  
     font-size: 20px;
-    top:50%;
+    top:25%;
     left:43%;
 
 }
 .answer3{
-    position: absolute;
+    position: relative;
     color: white;
     font-family: 'Dancing Script';  
     font-size: 20px;
-    top:50%;
+    top:25%;
     left:78%;
 }
 
@@ -294,12 +340,13 @@ h1 {
 }
 
 .mission-content {
-    max-width: 1200px; /* Ancho máximo para centrar */
+    max-width: 100%; /* Ancho máximo para centrar */
+    width: 100%;
     margin: 0 auto; /* Centra el contenedor */
     display: flex; /* Diseño de dos columnas */
     align-items: center; /* Alinea verticalmente */
-    gap: 20px; /* Espacio entre imagen y texto */
-    position: relative;
+    gap: 2%; /* Espacio entre imagen y texto */
+    box-sizing: border-box;
 }
 
 .mission-image {
@@ -412,7 +459,7 @@ h1 {
     transition: opacity 0.3s ease; /* Transición suave */
     position: relative;
     margin-top: 55%;
-    left: 15px;
+    left: 30%;
 
 }
 
@@ -486,26 +533,6 @@ h1 {
 }
 
 
-
-
-
-
-
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        background-size: cover; /* En móviles, puede cubrir más si es necesario */
-        padding: 30px 10px;
-        min-height: 400px;
-    }
-    .hero-image {
-        width: 250px; /* Reduce tamaño en móviles */
-    }
-}
-
-
-
 footer {
     background-color: #526255;
     color: white;
@@ -520,6 +547,25 @@ footer ul {
     gap: 20px;
 }
 
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover; /* En móviles, puede cubrir más si es necesario */
+        padding: 30px 10px;
+        min-height: 400px;
+    }
+    .hero-image {
+        width: 100%; /* Reduce tamaño en móviles */
+    }
+}
+
+
+
 /* Responsive: Para pantallas pequeñas (como móvil) */
 @media (max-width: 768px) {
     .hero-content {
@@ -528,4 +574,12 @@ footer ul {
     .gallery {
         flex-direction: column;
     }
+    .clients-container{
+        flex-direction: column;
+
+    }
+    .get-started{
+        position: relative;
+    }
+    
 }
