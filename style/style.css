@@ -547,9 +547,33 @@ footer ul {
     gap: 20px;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
 
-
+@media (max-width: 768px) {
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px; /* ajusta según tu header */
+        right: 0;
+        width: 100%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .main-nav.active ul {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
 
 
 /* Responsive */
@@ -581,5 +605,5 @@ footer ul {
     .get-started{
         position: relative;
     }
-    
+
 }
