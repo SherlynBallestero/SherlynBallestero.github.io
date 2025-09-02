@@ -494,8 +494,8 @@ footer ul {
     .hero-content {
         flex-direction: column;
     }
-    .gallery {
-        flex-direction: column;
+    .client-img{
+        width: 250px;
     }
     .clients-container{
         flex-direction: column;
@@ -503,6 +503,10 @@ footer ul {
     }
     .get-started{
         position: relative;
+    }
+    .mission-text h2{
+        position: relative;
+        text-align: center;
     }
 
 }
