@@ -333,7 +333,9 @@ h1 {
     size: 50px;
     position: relative;
     text-align: center;
-    text-orientation: upright;
+    top: 20px;
+    margin: 1%;
+    margin-bottom: 16px;
  
 }
 
@@ -342,7 +344,7 @@ h1 {
     size: 30px;
     font-family: "Dancing Script";
     position: relative;
-    margin: 1%;
+    margin: 5%;
 
 
 }
@@ -505,6 +507,16 @@ footer ul {
     .mission-text h2{
         position: relative;
         text-align: center;
+    }
+     .mission-text h2,
+    .how-help-text {
+        font-size: 1.2em;
+        margin-bottom: 8px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .mission-text {
+        padding: 10px;
     }
 
 }
