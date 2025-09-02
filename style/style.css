@@ -451,10 +451,13 @@ footer ul {
     .mission-text {
         padding: 10px;
     }
-    /* .raleway-typing{
-        font-size: large;
+    .raleway-typing{
+        font-size: medium;
         
-    } */
+    }
+    .dancing-typing{
+        font-size: medium;
+    }
 
 }
   
