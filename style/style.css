@@ -245,7 +245,7 @@ h1 {
     letter-spacing: 0%;  
     color: #000000;       
     opacity: 1;             
-    margin: 0; 
+    margin: 1%; 
     padding: 10;
 
 }
@@ -258,7 +258,7 @@ h1 {
     letter-spacing: 0%;   
     color: #000000;      
     opacity: 1;             
-    margin: 10;
+    margin: 3%;
     padding: 0;
 }
 .services-part{
