@@ -329,24 +329,21 @@ h1 {
 
 .mission-text h2 {
     font-size: 1.8em; /* Tamaño del título */
-    margin-bottom: 5px; /* Espacio debajo del título */
     color: white;
     size: 50px;
-    
-    top: 5%;
-    position: absolute;
-    left: 65%;
+    position: relative;
+    text-align: center;
+    text-orientation: upright;
+ 
 }
 
 .how-help-text{
     color: white;
     size: 30px;
     font-family: "Dancing Script";
-    top: 10px;
-    position: absolute;
-    left: 70%;
-    margin-left: 5%;
-    margin-top: 5%;
+    position: relative;
+    margin: 1%;
+
 
 }
 
