@@ -84,6 +84,7 @@ nav a {
     position: relative; /* Para controlar la superposición */
     text-align: center;
     min-height: 500px; /* Asegura suficiente espacio para ver el fondo */
+    margin: 1%;
 }
 
 .hero::before {
