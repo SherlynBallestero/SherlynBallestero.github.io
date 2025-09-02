@@ -21,3 +21,12 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % images.length;
   autoImg.src = images[currentIndex];
 }, 5000); // 60000 ms = 1 minut
+
+
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+
+dropdownToggle.addEventListener('click', function(e) {
+  e.preventDefault();
+  dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+});
