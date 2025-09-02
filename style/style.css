@@ -132,23 +132,8 @@ nav a {
     margin-bottom: 10px; /* Espacio debajo de la imagen */
     top:120px;
 }
-    /* Responsive main image for homepage */
-responsive-img {
-        width: 100%;
-        max-width: 1200px;
-        height: 60vh;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto;
-        border-radius: 20px;
-}
+    
 
-    /* Responsive images in general */
-img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-}
 
 
 h1 {
@@ -476,4 +461,88 @@ footer ul {
     }
 
 }
+  
+/* finance-tools-pages */
+
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #808080;
+        }
+        nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #808080;
+        }
+        .main-title {
+            text-align: center;
+            font-size: 28px;
+            margin: 20px 0;
+            color: #000;
+        }
+        .description {
+            background-color: #d8f0c8;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            font-size: 16px;
+            line-height: 1.5;
+            position: relative;
+        }
+        .description::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #000;
+            position: absolute;
+            top: 40px;
+            right: 20px;
+            transform: rotate(180deg);
+        }
+        .form-section {
+            background-color: #4b5b4e;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+        }
+        .form-input {
+            background-color: #fff;
+            border: none;
+            padding: 20px;
+            width: 80%;
+            margin: 10px auto;
+            display: block;
+            height: 50px;
+        }
+        .calculate-btn {
+            background-color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-family: cursive, serif;
+            font-size: 14px;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+        }
+        .results-section {
+            background-color: #d3d3d3;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            font-size: 16px;
+        }
+        .results-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .results-text {
+            line-height: 1.5;
+        }
   
