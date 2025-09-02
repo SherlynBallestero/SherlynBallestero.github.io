@@ -259,8 +259,8 @@ h1 {
     letter-spacing: 0%;   
     color: #000000;      
     opacity: 1;             
-    margin: 3%;
-    padding: 0;
+    margin: 1%;
+    padding: 10;
 }
 .services-part{
     background-color: #526255;
@@ -518,6 +518,10 @@ footer ul {
     }
     .mission-text {
         padding: 10px;
+    }
+    .raleway-typing{
+        font-size: small;
+        
     }
 
 }
