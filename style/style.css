@@ -416,8 +416,8 @@ footer ul {
         background-color: #A8C7A8;
     }
     .hero-image {
-        width: 100%; /* Reduce tamaño en móviles */
-        top:0px;
+        width: 50%; /* Reduce tamaño en móviles */
+       
     }
 }
 
