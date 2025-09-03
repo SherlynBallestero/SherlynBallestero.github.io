@@ -42,10 +42,74 @@
         between renting and buying, making it easier to see which option may be best for you.
     </div>
     <div class="form-section">
-        form.......ask in the form all data needed for the math part....<br>
-        <div class="form-input"></div>
+        <div class="form-containes">
+            <form>
+                <h1>Rent</h1>
+                    <div class=" col-sm-10 mx-auto ">
+                            <input  class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Monthly Rent" name="monthly-rent">
+                    </div>
+                    <div class=" col-sm-10 mx-auto">
+                            <input class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Renter's Insurance" name="rent-insurance">
+                    </div>
+                    <h1>Purchase</h1>
+
+                    <div class="form-group row">
+                       <div class="col-sm-10  mx-auto">
+                            <select class="custom-select custom-select-lg mb-3 mx-auto" placeholder="Loan Term">
+                                <option disabled selected>Loan Term</option>
+                                <option value="10 Years Fixed">10 Years Fixed</option>
+                                <option value="15 Years Fixed">15 Years Fixed</option>
+                                <option value="20 Years Fixed">20 Years Fixed</option>
+                                <option value="25 Years Fixed">25 Years Fixed</option>
+                                <option value="30 Years Fixed">30 Years Fixed</option>    
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10  mx-auto">
+                        <input class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Purchase Price" name="price">
+                    </div>
+        
+                    <div class="col-sm-10  mx-auto">
+                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Down Payment" name="down-payment">
+                    </div>
+                    
+                    <div class="col-sm-10  mx-auto">
+                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Interest Rate" name="interest-rate">
+                    </div>
+
+                    <div class="col-sm-10  mx-auto">
+                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Expected Years in Home" name="years-in-home">
+                    </div>
+                    
+                    
+                    <h1>Additional(no required)</h1>
+                    
+                    <div class="col-sm-10  mx-auto">
+                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Annual property taxes" name="property-taxes">
+                    </div>
+
+                    <div class="col-sm-10  mx-auto">
+                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Annual home insurance" name="home-insurance">
+                    </div>
+                    
+
+                    <div class="col-sm-10  mx-auto">
+                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Estimated Closing Cost" name="closing-cost">
+                    </div>
+
+                    <div class="col-sm-10  mx-auto">
+                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Rental Security Deposit" name="HOA">
+                    </div>
+
+                 
+            </form>
+        </div>
         <button class="calculate-btn">calculate</button>
     </div>
+
+
+
     <div class="results-section">
         <div class="results-title" style="font-family: Raleway;">Results....</div>
         <div class="results-text" style="font-family: 'Dancing Script';">
@@ -53,10 +117,11 @@
             how much you save or not in x time
         </div>
     </div>
-
-<footer>
-    <h1>the end</h1>
-</footer>
+    <footer>
+        <p style="font-family:  'Dancing Script', cursive;">Venus Home Loan Solutions is the personal brand of Yelina Ramos,<br> 
+        Mortgage Loan Originator (NMLS # 2685559).  All mortgage loan originations are offered through and under the sponsorship<br>
+        of Fast Loans & Mortgages, LLC (NMLS # 2424324), Equal Housing Opportunity.</p>
+    </footer>
 
  <script src="script.js"></script>    
 </body>

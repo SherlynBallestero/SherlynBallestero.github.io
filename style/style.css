@@ -406,6 +406,58 @@ footer ul {
         display: block;
     }
 }
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  
+
+}
+
+
+.form-container h1 {
+  font-size: 1.3em;
+  margin-bottom: 12px;
+  color: #526255;
+  text-align: center;
+}
+
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+select {
+  width: 50%;
+  min-width: 180px;
+  max-width: 300px;
+  margin: 0 auto 16px auto;
+  display: block;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+form input,
+form select {
+  margin-bottom: 16px;
+}
+@media (max-width: 600px) {
+  .form-container {
+    padding: 12px;
+    max-width: 95vw;
+  }
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -466,16 +518,8 @@ footer ul {
 /* finance-tools-pages */
 
         
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #808080;
-        }
-        nav a {
-            margin-left: 15px;
-            text-decoration: none;
-            color: #808080;
-        }
+      
+      
         .main-title {
             text-align: center;
             font-size: 28px;
@@ -486,7 +530,7 @@ footer ul {
             background-color: #d8f0c8;
             padding: 20px;
             margin: 0 auto;
-            max-width: 800px;
+            max-width: 75%;
             font-size: 16px;
             line-height: 1.5;
             position: relative;
@@ -504,23 +548,29 @@ footer ul {
             right: 20px;
             transform: rotate(180deg);
         }
+        
         .form-section {
             background-color: #4b5b4e;
             padding: 20px;
             margin: 20px auto;
-            max-width: 800px;
+            max-width: 75%;
             color: #fff;
             text-align: center;
             font-size: 14px;
+            align-items: center;
+            width: 80%; /* o 50%, según prefieras */
+            margin-bottom: 16px;
         }
         .form-input {
             background-color: #fff;
             border: none;
             padding: 20px;
-            width: 80%;
+            margin-bottom: 16px;
+            width: 70%;
             margin: 10px auto;
             display: block;
             height: 50px;
+            align-self: center;
         }
         .calculate-btn {
             background-color: #fff;
@@ -536,7 +586,7 @@ footer ul {
             background-color: #d3d3d3;
             padding: 20px;
             margin: 0 auto;
-            max-width: 800px;
+            max-width: 75%;
             font-size: 16px;
         }
         .results-title {
@@ -546,4 +596,4 @@ footer ul {
         .results-text {
             line-height: 1.5;
         }
-  
+       
