@@ -162,14 +162,15 @@ h1 {
 
 }
 .get-started {
-    background-color: #526255;
-    color: white;
+    background-color: #414d43;
+    color: rgb(220, 220, 220);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
     margin: 2%;
+    width: 10%;
 }
 .dancing-typing{
     font-family: 'Dancing Script', cursive; 
@@ -543,19 +544,7 @@ form select {
             line-height: 1.5;
             position: relative;
         }
-        .description::after {
-            content: "";
-            display: block;
-            width: 0;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-bottom: 10px solid #000;
-            position: absolute;
-            top: 40px;
-            right: 20px;
-            transform: rotate(180deg);
-        }
+        
         
         .form-section {
             background-color: #4b5b4e;
