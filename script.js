@@ -107,6 +107,62 @@ document.getElementById('rentBuyForm').addEventListener('submit', function(e) {
 
 });
 
+document.getElementById('refinanceForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // get the values
+  const R = parseFloat(document.querySelector('[name="original-loan"]').value) || 0;
+  const old_i = parseFloat(document.querySelector('[name="o-interest-rate"]').value) / 100 || 0;
+  const new_i = parseFloat(document.querySelector('[name="n-interest-rate"]').value) / 100 || 0;
+  const olt = parseInt(document.querySelector('[name="old-loan-term"]').value) || 0;
+  const nlt = parseInt(document.querySelector('[name="new-loan-term"]').value) || 0;
+  const AP = parseFloat(document.querySelector('[name="paid-amount"]').value) || 0;
+  const closing = parseFloat(document.querySelector('[name="closing-cost"]').value) || 0;
+  
+  // number of payments maked 
+    const paymentsMade = Math.floor(AP / (R * (old_i / 12) * Math.pow(1 + old_i / 12, olt * 12) / (Math.pow(1 + old_i / 12, olt * 12) - 1)));
+
+    // Saldo pending payments
+    const r_old = old_i / 12;
+    const n_old = olt * 12;
+    const m = paymentsMade;
+    const balance = R * (Math.pow(1 + r_old, n_old) - Math.pow(1 + r_old, m)) / (Math.pow(1 + r_old, n_old) - 1);
+    //new monthly payments
+    const r_new = new_i / 12;
+    const n_new = nlt * 12;
+    const newMonthly = balance * (r_new * Math.pow(1 + r_new, n_new)) / (Math.pow(1 + r_new, n_new) - 1);
+    //new loan cost
+    const totalNewCost = (newMonthly * n_new) + closing;
+    //showing results
+    const resultsDiv = document.querySelector('.results-text');
+    resultsDiv.innerHTML = `
+    <strong>Refinancing Results:</strong><br>
+    Remaining balance to refinance: $${balance.toFixed(2)}<br>
+    New monthly payment: $${newMonthly.toFixed(2)}<br>
+    Total cost over ${nlt} years (including closing costs): $${totalNewCost.toFixed(2)}`;
+
+});
+
+//mortgage calculations
+document.getElementById('mortgageForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // get the values
+  const PP = parseFloat(document.querySelector('[name="loan-amount"]').value) || 0;
+  const i = parseFloat(document.querySelector('[name="interest-rate"]').value) / 100 || 0;
+  const N = parseInt(document.querySelector('[name="loan-term"]').value) || 0;
+
+  //monthly interest 
+  const r = i / 12;
+  //number of pyments
+  const n = 12 * N;
+  //mosthly payment on buying 
+  const mortgage = PP * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+  const resultsDiv = document.querySelector('.results-text-m');
+  resultsDiv.innerHTML = ` Your Morgage is $${mortgage.toFixed(2)}`;
+  
+});
+
 
 
 
