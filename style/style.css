@@ -475,6 +475,11 @@ form select {
         width: 50%; /* Reduce tamaño en móviles */
        
     }
+    nav ul {
+        list-style: none;
+        display:flex;
+        gap: 5px;
+    }
 }
 
 
