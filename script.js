@@ -1,3 +1,5 @@
+
+
 //menu change form to movil adjustment
 const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.main-nav');
@@ -30,3 +32,83 @@ dropdownToggle.addEventListener('click', function(e) {
   e.preventDefault();
   dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
 });
+
+// rent buy calculations
+document.getElementById('rentBuyForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // get the values
+  const R = parseFloat(document.querySelector('[name="monthly-rent"]').value) || 0;
+  const RI = parseFloat(document.querySelector('[name="rent-insurance"]').value) || 0;
+  const PP = parseFloat(document.querySelector('[name="price"]').value) || 0;
+  const d = parseFloat(document.querySelector('[name="down-payment"]').value) / 100 || 0;
+  const i = parseFloat(document.querySelector('[name="interest-rate"]').value) / 100 || 0;
+  const N = parseInt(document.querySelector('.custom-select').value) || 0;
+  
+
+  // Ejemplo: Costo total de alquilar
+  const C_rent_total = (R + RI) * 12 * N;
+
+  // Ejemplo: Monto de préstamo
+  const L = PP * (1 - d);
+
+  
+  //monthly interest 
+  const r = i / 12;
+  //number of pyments
+  const n = 12 * N;
+  //mosthly payment on buying 
+  const M = L * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+  //total price of the house
+  const X= M*n;
+  //results...? 
+    const resultsDiv = document.querySelector('.results-text');
+   if (X-C_rent_total < 0)
+    {
+            resultsDiv.innerHTML = `
+        <strong>Buying this house is a great deal—you could save approximately $${(C_rent_total - X).toFixed(2)} compared to renting.</strong><br>
+        This is an estimate. For a personalized consultation, just call me!<br>
+        <strong>Total Cost of Rent in ${N} years:</strong> $${C_rent_total.toFixed(2)}<br>
+        <strong>Total mortgage payments in ${N} years:</strong> $${X.toFixed(2)}<br>
+        ${(X-C_rent_total).toFixed(2)}<br>
+          <strong>Total mothly mortgage:</strong> $${M.toFixed(2)} <br>
+        `;
+   }
+   else if(X-C_rent_total === 0)
+   {
+        resultsDiv.innerHTML = `
+        <strong>Buying this house is a great deal—you will pay about the same as renting over ${N} years.</strong><br>
+        However, after ${N} years, you will own your home, and your future savings will be much greater compared to continuing to rent.<br>
+        <strong>Total Cost of Rent in ${N} years:</strong> $${C_rent_total.toFixed(2)}<br>
+        <strong>Total mortgage payments in ${N} years:</strong> $${X.toFixed(2)}
+        This is an estimate. For a personalized consultation, just call me! <br>
+          <strong>Total mothly mortgage:</strong> $${M.toFixed(2)} <br>`;
+   }
+   else
+    {
+           const extraYears = Math.ceil((X - C_rent_total) / ((R + RI) * 12));
+
+            resultsDiv.innerHTML = `
+            <strong>Renting may help you save money for the next ${N} years.</strong><br>
+            But after that, if you buy a home, you will stop making monthly payments once you finish paying your mortgage.<br>
+            If you keep renting, you will always have to pay rent.<br>
+            For example, after ${N} years, you will have paid <strong>$${C_rent_total.toFixed(2)}</strong> in rent.<br>
+            If you buy, you will pay off your home in ${N} years and never pay rent again.<br>
+            <strong>After you finish paying your home, renting will cost you more in just ${extraYears} more year(s).</strong><br>
+            One day, you might think:<br>
+            <em>"Why didn't I buy my home when I had the chance?"</em><br>
+            This is an estimate. If you want help, just call me!<br>
+             <strong>Total mortgage payments in ${N} years:</strong> $${X.toFixed(2)} <br>
+             <strong>Total mothly mortgage:</strong> $${M.toFixed(2)} <br>
+
+
+            `;
+   }
+
+});
+
+
+
+
+
+

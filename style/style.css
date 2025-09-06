@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap'); 
- 
+ body{
+    -webkit-text-size-adjust: 100%; /* Para navegadores antiguos */
+  text-size-adjust: 100%; 
+ }
   
 html body {
     font-family: Arial, sans-serif;
@@ -558,7 +561,7 @@ form select {
             text-align: center;
             font-size: 14px;
             align-items: center;
-            width: 80%; /* o 50%, según prefieras */
+            width: 70%; /* o 50%, según prefieras */
             margin-bottom: 16px;
         }
         .form-input {
