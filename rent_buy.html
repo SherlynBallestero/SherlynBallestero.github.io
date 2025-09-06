@@ -40,12 +40,14 @@
         <div class="form-containes">
             <form id="rentBuyForm">
                 <h1 style="font-family: 'Dancing Script';">Rent</h1>
-                    <div class=" col-sm-10 mx-auto ">
-                            <input  class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Monthly Rent" name="monthly-rent">
+                    <div class=" col-sm-10 mx-auto  input-group">
+                            <input  class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Monthly Rent" name="monthly-rent" required step="0.01" min="0">
+                            <button type="button" class="help-btn" data-tooltip="Enter your monthly rent in dollars (e.g., 1200.50).">?</button>
                     </div>
-                    <div class=" col-sm-10 mx-auto">
-                            <input class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Renter's Insurance" name="rent-insurance">
-                    </div>
+                    <div class=" col-sm-10 mx-auto  input-group">
+                            <input class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Renter's Insurance" name="rent-insurance" required step="0.01" min="0">
+                            <button type="button" class="help-btn" data-tooltip="Enter your monthly rent insurance in dollars (e.g., 120.50).">?</button>
+                        </div>
                     <h1 style="font-family: 'Dancing Script';" >Purchase</h1>
 
                     <div class="form-group row">
@@ -61,37 +63,42 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-10  mx-auto">
-                        <input class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Purchase Price" name="price">
-                    </div>
-        
-                    <div class="col-sm-10  mx-auto">
-                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Down Payment" name="down-payment">
+                    <div class="col-sm-10  mx-auto input-group">
+                        <input class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Purchase Price" name="price" required step="0.01" min="0">
+                        <button type="button" class="help-btn" data-tooltip="Enter the home price">?</button>
                     </div>
                     
-                    <div class="col-sm-10  mx-auto">
-                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Interest Rate" name="interest-rate">
+                    <div class="col-sm-10  mx-auto input-group">
+                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Down Payment in %" name="down-payment" required step="1" min="0">
+                        <button type="button" class="help-btn" data-tooltip="Enter the down payment porcentage (10,20...)">?</button>
+                    </div>
+                    
+                    <div class="col-sm-10  mx-auto input-group">
+                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Interest Rate" name="interest-rate" required step="0.01" min="0">
+                        <button type="button" class="help-btn" data-tooltip="Enter the interest rate (6.5, 7.24)">?</button>
                     </div>
                     
                     
                     <h1 style="font-family: 'Dancing Script';">Additional(no required)</h1>
                     
-                    <div class="col-sm-10  mx-auto">
-                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Annual property taxes" name="property-taxes">
-                    </div>
+                    <div class="col-sm-10  mx-auto input-group">
+                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Property Taxes" name="property-taxes">
+                        <button type="button" class="help-btn" data-tooltip="Enter the monthly property taxes (560, 400)">?</button>
 
-                    <div class="col-sm-10  mx-auto">
-                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Annual home insurance" name="home-insurance">
                     </div>
                     
-
-                    <div class="col-sm-10  mx-auto">
-                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Estimated Closing Cost" name="closing-cost">
+                    <div class="col-sm-10  mx-auto input-group">
+                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Home insurance" name="home-insurance">
+                        <button type="button" class="help-btn" data-tooltip="Enter the monthly home insurance (123)">?</button>
+                    </div>
+                    
+                    
+                    <div class="col-sm-10  mx-auto input-group">
+                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Closing Cost" name="closing-cost">
+                        <button type="button" class="help-btn" data-tooltip="Enter the estimated closing cost ex (2000)">?</button>
                     </div>
 
-                    <div class="col-sm-10  mx-auto">
-                        <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Rental Security Deposit" name="security-deposit">
-                    </div>
+                    
 
                  
                     <button type="submit" class="calculate-btn">calculate</button>

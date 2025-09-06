@@ -34,29 +34,56 @@ setInterval(() => {
 
 
 
-
+document.querySelectorAll('input[type="number"]').forEach(input => {
+  input.addEventListener('input', function() {
+    if (this.value < 0) {
+      this.value = 0; //  0 if negative
+    }
+  });
+});
 
 
 // rent buy calculations
 document.getElementById('rentBuyForm').addEventListener('submit', function(e) {
   e.preventDefault();
 
+
+
+  // Validar que todos los campos requeridos estén llenos
+  const requiredFields = this.querySelectorAll('[required]');
+  let isValid = true;
+
+  requiredFields.forEach(field => {
+    if (!field.value || (field.type === 'number' && field.value <= 0) || (field.name === 'down-payment' && (field.value > 100 || field.value < 0))) {
+      isValid = false;
+      field.style.borderColor = 'red';
+    } else {
+      field.style.borderColor = '';
+    }
+  });
+
+  if (!isValid) {
+    document.querySelector('.results-text').innerHTML = '<strong>Please fill all fields with valid values.</strong>';
+    return;
+  }
+
+
   // get the values
   const R = parseFloat(document.querySelector('[name="monthly-rent"]').value) || 0;
   const RI = parseFloat(document.querySelector('[name="rent-insurance"]').value) || 0;
+
   const PP = parseFloat(document.querySelector('[name="price"]').value) || 0;
   const d = parseFloat(document.querySelector('[name="down-payment"]').value) / 100 || 0;
   const i = parseFloat(document.querySelector('[name="interest-rate"]').value) / 100 || 0;
   const N = parseInt(document.querySelector('.custom-select').value) || 0;
 
-  const PT = parseFloat(document.querySelector('[name="property-taxes"]').value) || 0; // Annual property taxes
-  const HI = parseFloat(document.querySelector('[name="home-insurance"]').value) || 0; // Annual home insurance
+  const PT = parseFloat(document.querySelector('[name="property-taxes"]').value) || 0; // property taxes
+  const HI = parseFloat(document.querySelector('[name="home-insurance"]').value) || 0; // home insurance
   const CC = parseFloat(document.querySelector('[name="closing-cost"]').value) || 0; // Estimated Closing Cost
-  const SD = parseFloat(document.querySelector('[name="security-deposit"]').value) || 0; // Rental Security Deposit (assuming HOA was a typo)
   
 
   // Ejemplo: Costo total de alquilar
-  const C_rent_total = (R + RI) * 12 * N;
+  const C_rent_total = (R + RI) * 12 * N ;
 
   // Ejemplo: Monto de préstamo
   const L = PP * (1 - d);
@@ -66,14 +93,19 @@ document.getElementById('rentBuyForm').addEventListener('submit', function(e) {
   const r = i / 12;
   //number of pyments
   const n = 12 * N;
-  //mosthly payment on buying 
+
+  //monthly payment on buying 
   const M = L * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+
   //total price of the house
   const X= M*n;
-// Additional costs for purchasing (taxes and insurance annualized over N years, plus one-time closing cost and security deposit)
-  const X_additional = (PT + HI) * N + CC + SD;
+ // Additional costs for purchasing (taxes and insurance annualized over N years, plus one-time closing cost)
+  const X_additional = (PT + HI) * n + CC ;
+  const X_additional_m = (PT + HI);
   // Total cost of buying
   const X_total = X + X_additional;
+   //monthly payment on buying having in consideration aditional info
+   const x_monthly=M+X_additional_m;
 
 
 
@@ -87,8 +119,7 @@ document.getElementById('rentBuyForm').addEventListener('submit', function(e) {
         This is an estimate. For a personalized consultation, just call me!<br>
         <strong>Total Cost of Rent in ${N} years:</strong> $${C_rent_total.toFixed(2)}<br>
         <strong>Total mortgage payments in ${N} years:</strong> $${X_total.toFixed(2)}<br>
-        ${(X_total-C_rent_total).toFixed(2)}<br>
-          <strong>Total mothly mortgage:</strong> $${M.toFixed(2)} <br>
+        <strong>Total mothly mortgage:</strong> $${x_monthly.toFixed(2)} <br>
         `;
    }
    else if(X_total-C_rent_total === 0)
@@ -99,7 +130,7 @@ document.getElementById('rentBuyForm').addEventListener('submit', function(e) {
         <strong>Total Cost of Rent in ${N} years:</strong> $${C_rent_total.toFixed(2)}<br>
         <strong>Total mortgage payments in ${N} years:</strong> $${X_total.toFixed(2)}
         This is an estimate. For a personalized consultation, just call me! <br>
-          <strong>Total mothly mortgage:</strong> $${M.toFixed(2)} <br>`;
+          <strong>Total mothly mortgage:</strong> $${x_monthly.toFixed(2)} <br>`;
    }
    else
     {
@@ -116,7 +147,7 @@ document.getElementById('rentBuyForm').addEventListener('submit', function(e) {
             <em>"Why didn't I buy my home when I had the chance?"</em><br>
             This is an estimate. If you want help, just call me!<br>
              <strong>Total mortgage payments in ${N} years:</strong> $${X_total.toFixed(2)} <br>
-             <strong>Total mothly mortgage:</strong> $${M.toFixed(2)} <br>
+             <strong>Total mothly mortgage:</strong> $${x_monthly.toFixed(2)} <br>
 
 
             `;
