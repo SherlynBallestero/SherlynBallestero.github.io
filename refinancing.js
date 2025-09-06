@@ -33,3 +33,20 @@ document.getElementById('refinanceForm').addEventListener('submit', function(e) 
     Total cost over ${nlt} years (including closing costs): $${totalNewCost.toFixed(2)}`;
 
 });
+
+
+//menu change form to movil adjustment
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('.main-nav');
+
+menuToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('active');
+});
+
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+dropdownToggle.addEventListener('click', function(e) {
+  e.preventDefault();
+  dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+});
+

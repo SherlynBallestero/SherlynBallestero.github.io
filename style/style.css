@@ -170,12 +170,12 @@ h1 {
     cursor: pointer;
     position: relative;
     margin: 2%;
-    width: 10%;
+   
 }
 .dancing-typing{
     font-family: 'Dancing Script', cursive; 
     font-weight: 400;  
-    font-size: 50px;   
+    font-size: 20px;   
     line-height: normal;  
     letter-spacing: 0%;  
     color: #000000;       
@@ -187,7 +187,7 @@ h1 {
 .raleway-typing{
     font-family: 'Raleway';  
     font-weight: 400;  
-    font-size: 60px;   
+    font-size: 20px;   
     position: relative;
     line-height: normal; 
     letter-spacing: 0%;   
@@ -220,10 +220,12 @@ h1 {
     text-align: center;
     position: relative;
     font-weight: 400;
-    font-family: 'Dancing Script'; 
+    font-family: 'Raleway'; 
     margin: 0 auto;
     color: white;
 }
+
+
 
 
 .third_part {
@@ -555,7 +557,7 @@ form select {
             text-align: center;
             font-size: 14px;
             align-items: center;
-            width: 70%; /* o 50%, según prefieras */
+            
             margin-bottom: 16px;
         }
         .form-input {
@@ -583,8 +585,9 @@ form select {
             background-color: #d3d3d3;
             padding: 20px;
             margin: 0 auto;
-            max-width: 75%;
+            max-width: 100%;
             font-size: 16px;
+            text-align: center;
         }
         .results-title {
             font-size: 18px;
