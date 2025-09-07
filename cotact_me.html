@@ -48,28 +48,57 @@
 
   <section class="contact-section">
     <h2>Contact Me</h2>
+      <P style="font-family: Raleway;"> Let me know in your mail when is better for you have an appoiment or if you have any doubt about my services, I will answer you with plasure. Have a good one!</P>
+
     <form id="contactForm" class="contact-form">
       <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
       </div>
       <div class="form-group">
-        <label for="name">Email:</label>
-        <input type="text" id="email" name="email" required>
-      </div>
-      <div class="form-group">
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
       </div>
-      <button type="submit" class="submit-btn">Send</button>
+      <button type="submit" class="btn btn-outline-success submit-btn">Sent</button>
     </form>
-  </section>
-    <script>
+    </section>
+   
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Phone: (555) 123-4567</p>
+      <p>Email: info@venushomeloansolutions.com</p>
+      <p>Address: 123 Main St, Miami, FL 33101</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Legal Notice</h3>
+      <p>Venus Home Loan Solutions is the personal brand of Yelina Ramos, Mortgage Loan Originator (NMLS # 2685559). All mortgage loan originations are offered through and under the sponsorship of Fast Loans & Mortgages, LLC (NMLS # 2424324), Equal Housing Opportunity.</p>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+      <p>&copy; 2025 Venus Home Loan Solutions. All rights reserved.</p>
+      <div class="social-links">
+          <a href="https://facebook.com/venushomeloans">Facebook</a> |
+          <a href="https://youtube.com/@yelinaramos-rp7hl?si=7K24O9hF6ZxIoGt7">Youtube</a> |
+          <a href="https://www.instagram.com/homeloans_yelina?igsh=MXhsMXhmYnhsenRyYQ==">Instagram</a>
+        </div>
+    </div>
+<div class="footer-bottom">
+    <p style="font-size: xx-small;">
+    Boost your business with websites, e-commerces and more with RenSher Enterprises LLC. <br>
+<a href="mailto:RenSherEnterprisesL LC@gmail.com?subject=Inquiry%20About%20Web%20Development%20Services&body=Hello%2C%20I%27m%20interested%20in%20your%20web%20development%20services%21" class="cta-btn">Email Us</a></p> 
+</div>
+</footer>
+ <script>
       document.getElementById('contactForm').addEventListener('submit', function(e) {
         e.preventDefault();
         const name = document.getElementById('name').value;
         const message = document.getElementById('message').value;
-        const mailto = `mailto:sherlynballestero@gmail.com?subject=New Contact Form Submission from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage:%0A${encodeURIComponent(message)}`;
+        const mailto = `mailto:sherlynballestero@gmail.com?subject=New Contact Form Submission from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AMessage:%0A${encodeURIComponent(message)}`;
         window.location.href = mailto;
       });
     </script>
