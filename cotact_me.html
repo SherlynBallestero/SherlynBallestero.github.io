@@ -101,6 +101,20 @@
         const mailto = `mailto:sherlynballestero@gmail.com?subject=New Contact Form Submission from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AMessage:%0A${encodeURIComponent(message)}`;
         window.location.href = mailto;
       });
+        //menu change form to movil adjustment
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    menuToggle.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+    });
+
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    dropdownToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
     </script>
 
 </body>

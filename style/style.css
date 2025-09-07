@@ -730,6 +730,16 @@ margin-bottom: 16px;
 }
 
 @media (max-width: 768px) {
+    .submit-btn {
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%;
+  align-self: center;
+}
+
+.submit-btn:hover {
+  background-color: #D6E5C4;
+}
   .main-nav {
     display: none;
   }
