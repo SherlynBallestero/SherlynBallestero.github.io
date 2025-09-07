@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Venus Loan Solutions</title>
+    <link rel="stylesheet" href="style\style.css">
+   
+</head>
+<body>
+   
+<header class="fixed-header">
+  
+    <div class="container">
+        <h1 class="logo_1">Venus Home</h1>
+        <h2 class="logo_2">LOAN SOLUTIONS</h2>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About us</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Finance Tools</a>
+                <ul class="dropdown-menu">
+                    <li><a href="rent_buy.html">Rent or buy?</a></li>
+                    <li><a href="refinancing.html"> Refinancing</a></li>
+                    <li><a href="mortgage.html"> Mortgage </a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- hide until open in movil -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="rent_buy.html">Rent or buy?</a></li>
+            <li><a href="refinancing.html">Refinancing</a></li>
+            <li><a href="mortgage.html">Mortgage</a></li>
+        </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+</header>
+
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send</button>
+    </form>
+  </section>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const message = document.getElementById('message').value;
+        const mailto = `mailto:sherlynballestero@gmail.com?subject=New Contact Form Submission from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage:%0A${encodeURIComponent(message)}`;
+        window.location.href = mailto;
+      });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+

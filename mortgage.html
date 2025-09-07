@@ -9,8 +9,9 @@
    
 </head>
 <body>
-    <header  style="background-color:#d3d3d3">
-            <div class="container">
+   <header class="fixed-header" style="background-color:#d3d3d3">
+  
+    <div class="container">
         <h1 class="logo_1">Venus Home</h1>
         <h2 class="logo_2">LOAN SOLUTIONS</h2>
     </div>
@@ -41,7 +42,7 @@
         </ul>
     </nav>
     <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
-    </header>
+</header>
     <h1 class="main-title" style="font-family: 'Dancing Script';">Calculate the mortgage </h1>
     <div class="description" style="font-family: 'Raleway';">
         <strong>Discover the Real Cost of Your Dream Home!</strong><br>
@@ -53,12 +54,15 @@
         <div class="form-containes">
             <form id="mortgageForm">
                   <h1 style="font-family: 'Dancing Script';"> Let's do math!</h1>
-                  <div class="col-sm-10  mx-auto">
+                  <div class="col-sm-10  mx-auto input-group">
                         <input class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Loan Amount" name="loan-amount">
+                        <button type="button" class="help-btn" data-tooltip="A loan amount is the total money borrowed for a house purchase. ej: 250000">?</button>
+                        
                     </div>     
-                    <div class="col-sm-10  mx-auto">
+                    <div class="col-sm-10  mx-auto input-group">
                         <input class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Interest Rate" name="interest-rate">
-                    </div> 
+                        <button type="button" class="help-btn" data-tooltip="Interest rate is the cost of borrowing money, expressed as percentage ex: 6.5">?</button>
+                        </div> 
 
                     <div class="form-group row">
                        <div class="col-sm-10  mx-auto ">
@@ -86,10 +90,34 @@
         </div>
     </div>
 
-<footer>
-    <p style="font-family:  'Dancing Script', cursive;">Venus Home Loan Solutions is the personal brand of Yelina Ramos,<br> 
-    Mortgage Loan Originator (NMLS # 2685559).  All mortgage loan originations are offered through and under the sponsorship<br>
-    of Fast Loans & Mortgages, LLC (NMLS # 2424324), Equal Housing Opportunity.</p>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Phone: (555) 123-4567</p>
+      <p>Email: info@venushomeloansolutions.com</p>
+      <p>Address: 123 Main St, Miami, FL 33101</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Legal Notice</h3>
+      <p>Venus Home Loan Solutions is the personal brand of Yelina Ramos, Mortgage Loan Originator (NMLS # 2685559). All mortgage loan originations are offered through and under the sponsorship of Fast Loans & Mortgages, LLC (NMLS # 2424324), Equal Housing Opportunity.</p>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+      <p>&copy; 2025 Venus Home Loan Solutions. All rights reserved.</p>
+      <div class="social-links">
+          <a href="https://facebook.com/venushomeloans">Facebook</a> |
+          <a href="https://youtube.com/@yelinaramos-rp7hl?si=7K24O9hF6ZxIoGt7">Youtube</a> |
+          <a href="https://www.instagram.com/homeloans_yelina?igsh=MXhsMXhmYnhsenRyYQ==">Instagram</a>
+        </div>
+    </div>
+<div class="footer-bottom">
+    <p style="font-size: xx-small;">
+    Boost your business with websites, e-commerces and more with RenSher Enterprises LLC. <br>
+<a href="mailto:RenSherEnterprisesL LC@gmail.com?subject=Inquiry%20About%20Web%20Development%20Services&body=Hello%2C%20I%27m%20interested%20in%20your%20web%20development%20services%21" class="cta-btn">Email Us</a></p> 
+</div>
 </footer>
 
 <script src="morgage_calulation.js"></script>   
