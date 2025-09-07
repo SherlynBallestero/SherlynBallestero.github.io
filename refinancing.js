@@ -37,10 +37,10 @@ document.getElementById('refinanceForm').addEventListener('submit', function(e) 
 
 //menu change form to movil adjustment
 const menuToggle = document.querySelector('.menu-toggle');
-const mainNav = document.querySelector('.main-nav');
+const mobileNav = document.querySelector('.mobile-nav');
 
 menuToggle.addEventListener('click', () => {
-    mainNav.classList.toggle('active');
+  mobileNav.classList.toggle('active');
 });
 
 const dropdownToggle = document.querySelector('.dropdown-toggle');
@@ -49,4 +49,5 @@ dropdownToggle.addEventListener('click', function(e) {
   e.preventDefault();
   dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
 });
+
 
