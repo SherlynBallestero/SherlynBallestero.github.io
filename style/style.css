@@ -275,7 +275,7 @@ h1 {
 .mobile-services-heading{
   display:none;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .service-content {
     display: grid;
     align-items: center;
