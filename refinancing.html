@@ -1,157 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <title>Venus Loan Solutions</title>
-    <link rel="stylesheet" href="style\style.css">
-   
-</head>
-<body>
-     <header class="fixed-header" style="background-color:#d3d3d3">
-           
-            <div class="container">
+    <link rel="stylesheet" href="style\style.css" />
+  </head>
+  <body>
+    <header class="fixed-header" style="background-color: #d3d3d3">
+      <div class="container">
         <h1 class="logo_1">Venus Home</h1>
         <h2 class="logo_2">LOAN SOLUTIONS</h2>
-    </div>
-    <nav class="main-nav">
+      </div>
+      <nav class="main-nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About us</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Finance Tools</a>
-                <ul class="dropdown-menu">
-                    <li><a href="rent_buy.html">Rent or buy?</a></li>
-                    <li><a href="refinancing.html"> Refinancing</a></li>
-                    <li><a href="mortgage.html"> Mortgage </a></li>
-                </ul>
-            </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About us</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Finance Tools</a>
+            <ul class="dropdown-menu">
+              <li><a href="rent_buy.html">Rent or buy?</a></li>
+              <li><a href="refinancing.html"> Refinancing</a></li>
+              <li><a href="mortgage.html"> Mortgage </a></li>
+            </ul>
+          </li>
         </ul>
-    </nav>
-    <!-- hide until open in movil -->
-    <nav class="mobile-nav">
+      </nav>
+      <!-- hide until open in movil -->
+      <nav class="mobile-nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="rent_buy.html">Rent or buy?</a></li>
-            <li><a href="refinancing.html">Refinancing</a></li>
-            <li><a href="mortgage.html">Mortgage</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="rent_buy.html">Rent or buy?</a></li>
+          <li><a href="refinancing.html">Refinancing</a></li>
+          <li><a href="mortgage.html">Mortgage</a></li>
         </ul>
-    </nav>
-    <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+      </nav>
+      <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
     </header>
 
-    <h1 class="main-title" style="font-family: 'Dancing Script';">Refinancing </h1>
-        <div class="description" style="font-family:'Raleway' ;">  
-            <strong>Unlock the Secret to Saving Thousands on Your Home Loan!</strong><br>
-            Are you sitting on a mortgage that’s costing you more than it should? Many homeowners lock in their loan and never look back—big mistake! Refinancing could slash your monthly payments and save you a fortune, depending on your current interest rate, remaining loan term, and how long you plan to stay in your home. Curious? Let’s crunch the numbers! Use our easy calculator below to see your potential savings, then connect with an independent mortgage broker to kickstart your refinance journey today!
-        </div>
-   
-  
+    <h1 class="main-title" style="font-family: 'Dancing Script'">
+      Refinancing
+    </h1>
+    <div class="description" style="font-family: 'Raleway'">
+      <strong>Unlock the Secret to Saving Thousands on Your Home Loan!</strong
+      ><br />
+      Are you sitting on a mortgage that’s costing you more than it should? Many
+      homeowners lock in their loan and never look back—big mistake! Refinancing
+      could slash your monthly payments and save you a fortune, depending on
+      your current interest rate, remaining loan term, and how long you plan to
+      stay in your home. Curious? Let’s crunch the numbers! Use our easy
+      calculator below to see your potential savings, then connect with an
+      independent mortgage broker to kickstart your refinance journey today!
+    </div>
+
     <div class="form-section">
-        <div class="form-containes">
-            <form id="refinanceForm">
-                   <h1  style="font-family: 'Dancing Script';"> Let's do math!</h1>
-               
-                    <div class=" col-sm-10 mx-auto  input-group ">
-                         <input  class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Original Loan Amount" name="original-loan">
-                         <button type="button" class="help-btn" data-tooltip="Original loan is initial borrowed amount for mortgage purchase. ">?</button>   
-                        </div>
-                        <div class=" col-sm-10 mx-auto input-group">
-                            <input class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Old Interest Rate" name="o-interest-rate">
-                            <button type="button" class="help-btn" data-tooltip="Current interest rate is the existing loan interest cost in porcentage">?</button>   
-                        </div>
-                        
-                        
-                        <div class="form-group row">
-                            <div class="col-sm-10  mx-auto ">
-                                <select class="custom-select custom-select-lg mb-3 mx-auto" placeholder="Old Loan Term" name="old-loan-term">
-                                    <option disabled selected>Old Loan Term</option>
-                                    <option value="10">10 Years Fixed</option>
-                                    <option value="15">15 Years Fixed</option>
-                                    <option value="20">20 Years Fixed</option>
-                                    <option value="25">25 Years Fixed</option>
-                                    <option value="30">30 Years Fixed</option>    
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-10  mx-auto  input-group">
-                            <input class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Amount Already Paid" name="paid-amount">
-                            <button type="button" class="help-btn" data-tooltip="Paid amount is money paid from original loan.">?</button>   
-                        </div> 
-                        
-                        <div class="col-sm-10  mx-auto  input-group">
-                            <input class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="New Interest Rate" name="n-interest-rate">
-                            <button type="button" class="help-btn" data-tooltip="New interest rate is the new loan interest cost in porcentage">?</button>   
-                        </div>   
-                        
-                        <div class="form-group row">
-                            <div class="col-sm-10  mx-auto ">
-                                <select class="new-loan-term custom-select custom-select-lg mb-3 mx-auto" placeholder="New Loan Term" name="new-loan-term">
-                                    <option disabled selected>New Loan Term</option>
-                                    <option value="10">10 Years Fixed</option>
-                                    <option value="15">15 Years Fixed</option>
-                                    <option value="20">20 Years Fixed</option>
-                                    <option value="25">25 Years Fixed</option>
-                                    <option value="30">30 Years Fixed</option>    
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-10  mx-auto  input-group">
-                            <input class="form-control form-control-sm mb-3 w-50  mx-auto" type="text" placeholder="Estimate Closing Cost" name="closing-cost">
-                            <button type="button" class="help-btn" data-tooltip="Closing costs are fees paid to finalize a home loan.">?</button>   
-                    </div> 
+      <div class="form-containes">
+        <form id="refinanceForm">
+          <h1 style="font-family: 'Dancing Script'">Let's do math!</h1>
 
-                    <button type="submit" class="calculate-btn">calculate</button>
-            </form>
+          <div class="col-sm-10 mx-auto input-group">
+            <button
+              type="button"
+              class="help-btn"
+              data-tooltip="Original loan is initial borrowed amount for mortgage purchase. "
+            >
+              ?
+            </button>
+            <input
+              class="form-control form-control-sm mb-3 w-50 mx-auto"
+              type="text"
+              placeholder="Original Loan Amount"
+              name="original-loan"
+            />
+          </div>
+          <div class="col-sm-10 mx-auto input-group">
+            <button
+              type="button"
+              class="help-btn"
+              data-tooltip="Current interest rate is the existing loan interest cost in porcentage"
+            >
+              ?
+            </button>
+            <input
+              class="form-control form-control-sm mb-3 w-50 mx-auto"
+              type="text"
+              placeholder="Old Interest Rate"
+              name="o-interest-rate"
+            />
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-10 mx-auto input-group">
+              <select
+                class="custom-select custom-select-lg mb-3 mx-auto"
+                placeholder="Old Loan Term"
+                name="old-loan-term"
+              >
+                <option disabled selected>Old Loan Term</option>
+                <option value="10">10 Years Fixed</option>
+                <option value="15">15 Years Fixed</option>
+                <option value="20">20 Years Fixed</option>
+                <option value="25">25 Years Fixed</option>
+                <option value="30">30 Years Fixed</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-10 mx-auto input-group">
+            <button
+              type="button"
+              class="help-btn"
+              data-tooltip="Paid amount is money paid from original loan."
+            >
+              ?
+            </button>
+            <input
+              class="form-control form-control-sm mb-3 w-50 mx-auto"
+              type="text"
+              placeholder="Amount Already Paid"
+              name="paid-amount"
+            />
+          </div>
+
+          <div class="col-sm-10 mx-auto input-group">
+            <button
+              type="button"
+              class="help-btn"
+              data-tooltip="New interest rate is the new loan interest cost in porcentage"
+            >
+              ?
+            </button>
+            <input
+              class="form-control form-control-sm mb-3 w-50 mx-auto"
+              type="text"
+              placeholder="New Interest Rate"
+              name="n-interest-rate"
+            />
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-10 mx-auto input-group">
+              <select
+                class="new-loan-term custom-select custom-select-lg mb-3 mx-auto"
+                placeholder="New Loan Term"
+                name="new-loan-term"
+              >
+                <option disabled selected>New Loan Term</option>
+                <option value="10">10 Years Fixed</option>
+                <option value="15">15 Years Fixed</option>
+                <option value="20">20 Years Fixed</option>
+                <option value="25">25 Years Fixed</option>
+                <option value="30">30 Years Fixed</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-10 mx-auto input-group">
+            <button
+              type="button"
+              class="help-btn"
+              data-tooltip="Closing costs are fees paid to finalize a home loan."
+            >
+              ?
+            </button>
+            <input
+              class="form-control form-control-sm mb-3 w-50 mx-auto"
+              type="text"
+              placeholder="Estimate Closing Cost"
+              name="closing-cost"
+            />
+          </div>
+
+          <button type="submit" class="calculate-btn">calculate</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="results-section">
+      <div class="results-title" style="font-family: 'Dancing Script'">
+        Results....
+      </div>
+      <div class="results-text" style="font-family: Raleway"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Phone: (555) 123-4567</p>
+          <p>Email: info@venushomeloansolutions.com</p>
+          <p>Address: 123 Main St, Miami, FL 33101</p>
         </div>
-    </div>
 
-      <div class="results-section">
-        <div class="results-title" style="font-family:'Dancing Script' ;">Results....</div>
-        <div class="results-text" style="font-family: Raleway;">
-           
-       </div>
-    </div>
-
-
-
-
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-section">
-      <h3>Contact Us</h3>
-      <p>Phone: (555) 123-4567</p>
-      <p>Email: info@venushomeloansolutions.com</p>
-      <p>Address: 123 Main St, Miami, FL 33101</p>
-    </div>
-    
-    <div class="footer-section">
-      <h3>Legal Notice</h3>
-      <p>Venus Home Loan Solutions is the personal brand of Yelina Ramos, Mortgage Loan Originator (NMLS # 2685559). All mortgage loan originations are offered through and under the sponsorship of Fast Loans & Mortgages, LLC (NMLS # 2424324), Equal Housing Opportunity.</p>
-    </div>
-  </div>
-  
-  <div class="footer-bottom">
-      <p>&copy; 2025 Venus Home Loan Solutions. All rights reserved.</p>
-      <div class="social-links">
-          <a href="https://facebook.com/venushomeloans">Facebook</a> |
-          <a href="https://youtube.com/@yelinaramos-rp7hl?si=7K24O9hF6ZxIoGt7">Youtube</a> |
-          <a href="https://www.instagram.com/homeloans_yelina?igsh=MXhsMXhmYnhsenRyYQ==">Instagram</a>
+        <div class="footer-section">
+          <h3>Legal Notice</h3>
+          <p>
+            Venus Home Loan Solutions is the personal brand of Yelina Ramos,
+            Mortgage Loan Originator (NMLS # 2685559). All mortgage loan
+            originations are offered through and under the sponsorship of Fast
+            Loans & Mortgages, LLC (NMLS # 2424324), Equal Housing Opportunity.
+          </p>
         </div>
-    </div>
-<div class="footer-bottom">
-    <p style="font-size: xx-small;">
-    Boost your business with websites, e-commerces and more with RenSher Enterprises LLC. <br>
-<a href="mailto:RenSherEnterprisesL LC@gmail.com?subject=Inquiry%20About%20Web%20Development%20Services&body=Hello%2C%20I%27m%20interested%20in%20your%20web%20development%20services%21" class="cta-btn">Email Us</a></p> 
-</div>
-</footer>
+      </div>
 
- <script src="refinancing.js"></script>    
-</body>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Venus Home Loan Solutions. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61580190853662"
+            >Facebook</a
+          >
+          |
+          <a href="https://youtube.com/@yelinaramos-rp7hl?si=7K24O9hF6ZxIoGt7"
+            >Youtube</a
+          >
+          |
+          <a
+            href="https://www.instagram.com/homeloans_yelina?igsh=MXhsMXhmYnhsenRyYQ=="
+            >Instagram</a
+          >
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="font-size: xx-small">
+          Boost your business with websites, e-commerces and more with RenSher
+          Enterprises LLC. <br />
+          <a
+            href="mailto:RenSherEnterprisesL LC@gmail.com?subject=Inquiry%20About%20Web%20Development%20Services&body=Hello%2C%20I%27m%20interested%20in%20your%20web%20development%20services%21"
+            class="cta-btn"
+            >Email Us</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="refinancing.js"></script>
+  </body>
 </html>
