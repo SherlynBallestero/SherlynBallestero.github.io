@@ -43,6 +43,12 @@ dropdownToggle.addEventListener("click", function (e) {
   dropdownMenu.style.display =
     dropdownMenu.style.display === "block" ? "none" : "block";
 });
+// Cierra el menú móvil al hacer clic en cualquier enlace del menú
+document.querySelectorAll('.mobile-nav a').forEach(function(link) {
+  link.addEventListener('click', function() {
+    document.querySelector('.mobile-nav').classList.remove('active');
+  });
+});
 
 // image change part
 const images = [

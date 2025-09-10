@@ -1,278 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <title>Venus Loan Solutions</title>
     <link rel="stylesheet" href="style\style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="fixed-header" style="background-color: #d3d3d3">
-      <div class="container">
-        <h1 class="logo_1">Venus Home</h1>
-        <h2 class="logo_2">LOAN SOLUTIONS</h2>
-      </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Finance Tools</a>
-            <ul class="dropdown-menu">
-              <li><a href="rent_buy.html">Rent or buy?</a></li>
-              <li><a href="refinancing.html"> Refinancing</a></li>
-              <li><a href="mortgage.html"> Mortgage </a></li>
+        <div class="container">
+            <h1 class="logo_1">Venus Home</h1>
+            <h2 class="logo_2">LOAN SOLUTIONS</h2>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Finance Tools</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rent_buy.html">Rent or buy?</a></li>
+                        <li><a href="refinancing.html"> Refinancing</a></li>
+                        <li><a href="mortgage.html"> Mortgage </a></li>
+                    </ul>
+                </li>
             </ul>
-          </li>
-        </ul>
-      </nav>
-      <!-- hide until open in movil -->
-      <nav class="mobile-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rent_buy.html">Rent or buy?</a></li>
-          <li><a href="refinancing.html">Refinancing</a></li>
-          <li><a href="mortgage.html">Mortgage</a></li>
-        </ul>
-      </nav>
-      <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+        </nav>
+        <!-- hide until open in movil -->
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rent_buy.html">Rent or buy?</a></li>
+                <li><a href="refinancing.html">Refinancing</a></li>
+                <li><a href="mortgage.html">Mortgage</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
     </header>
 
     <h1 class="main-title" style="font-family: 'Dancing Script'">
-      Rent or buy?
+        Rent or buy?
     </h1>
     <div class="description" style="font-family: 'Raleway'">
-      <strong>Buy or Rent? Discover the Smarter Choice for Your Future!</strong
-      ><br />
-      Torn between renting and owning your dream home? It’s a big decision, and
-      it all starts with the numbers. From affordability to long-term savings,
-      our powerful calculator breaks down the costs of renting versus buying,
-      giving you crystal-clear insight into what’s best for *you*. Stop
-      wondering—start exploring now and take the first step toward your perfect
-      home!
+        <strong>Buy or Rent? Discover the Smarter Choice for Your Future!</strong><br />
+        Torn between renting and owning your dream home? It’s a big decision, and
+        it all starts with the numbers. From affordability to long-term savings,
+        our powerful calculator breaks down the costs of renting versus buying,
+        giving you crystal-clear insight into what’s best for *you*. Stop
+        wondering—start exploring now and take the first step toward your perfect
+        home!
     </div>
     <div class="form-section">
-      <div class="form-containes">
-        <form id="rentBuyForm">
-          <h1 style="font-family: 'Dancing Script'">Rent</h1>
-          <div class="col-sm-10 mx-auto input-group">
-            <button
-              type="button"
-              class="help-btn"
-              data-tooltip="Enter your monthly rent in dollars (e.g., 1200.50)."
-            >
-              ?
-            </button>
-            <input
-              class="form-control form-control-sm mb-3 w-50 mx-auto"
-              type="text"
-              placeholder="Monthly Rent"
-              name="monthly-rent"
-              required
-              step="0.01"
-              min="0"
-            />
-          </div>
+        <div class="form-containes">
+            <form id="rentBuyForm">
+                <h1 style="font-family: 'Dancing Script'">Rent</h1>
+                <div class="col-sm-10 mx-auto input-group">
+                    <button type="button" class="help-btn"
+                        data-tooltip="Enter your monthly rent in dollars (e.g., 1200.50).">
+                        ?
+                    </button>
+                    <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Monthly Rent"
+                        name="monthly-rent" required step="0.01" min="0" />
+                </div>
 
-          <div class="col-sm-10 mx-auto input-group">
-            <button
-              type="button"
-              class="help-btn"
-              data-tooltip="Enter your monthly rent insurance in dollars (e.g., 120.50)."
-            >
-              ?
-            </button>
-            <input
-              class="form-control form-control-sm mb-3 w-50 mx-auto"
-              type="text"
-              placeholder="Renter's Insurance"
-              name="rent-insurance"
-              required
-              step="0.01"
-              min="0"
-            />
-          </div>
+                <div class="col-sm-10 mx-auto input-group">
+                    <button type="button" class="help-btn"
+                        data-tooltip="Enter your monthly rent insurance in dollars (e.g., 120.50).">
+                        ?
+                    </button>
+                    <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text"
+                        placeholder="Renter's Insurance" name="rent-insurance" required step="0.01" min="0" />
+                </div>
 
-          <h1 style="font-family: 'Dancing Script'">Purchase</h1>
-          <div class="form-group row">
-            <div class="col-sm-10 mx-auto input-group">
-              <select
-                class="custom-select custom-select-lg mb-3 mx-auto"
-                placeholder="Loan Term"
-              >
-                <option disabled selected>Loan Term</option>
-                <option value="10">10 Years Fixed</option>
-                <option value="15">15 Years Fixed</option>
-                <option value="20">20 Years Fixed</option>
-                <option value="25">25 Years Fixed</option>
-                <option value="30">30 Years Fixed</option>
-              </select>
-            </div>
-          </div>
+                <h1 style="font-family: 'Dancing Script'">Purchase</h1>
+                <div class="form-group row">
+                    <div class="col-sm-10 mx-auto input-group">
+                        <select class="custom-select custom-select-lg mb-3 mx-auto" placeholder="Loan Term">
+                            <option disabled selected>Loan Term</option>
+                            <option value="10">10 Years Fixed</option>
+                            <option value="15">15 Years Fixed</option>
+                            <option value="20">20 Years Fixed</option>
+                            <option value="25">25 Years Fixed</option>
+                            <option value="30">30 Years Fixed</option>
+                        </select>
+                    </div>
+                </div>
 
-          <div class="col-sm-10 mx-auto input-group">
-            <button
-              type="button"
-              class="help-btn"
-              data-tooltip="Enter the home price"
-            >
-              ?
-            </button>
-            <input
-              class="form-control form-control-sm mb-3 w-50 mx-auto"
-              type="text"
-              placeholder="Purchase Price"
-              name="price"
-              required
-              step="0.01"
-              min="0"
-            />
-          </div>
+                <div class="col-sm-10 mx-auto input-group">
+                    <button type="button" class="help-btn" data-tooltip="Enter the home price">
+                        ?
+                    </button>
+                    <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text"
+                        placeholder="Purchase Price" name="price" required step="0.01" min="0" />
+                </div>
 
-          <div class="col-sm-10 mx-auto input-group">
-            <button
-              type="button"
-              class="help-btn"
-              data-tooltip="Enter the down payment porcentage (10,20...)"
-            >
-              ?
-            </button>
-            <input
-              class="form-control form-control-sm mb-3 w-50 mx-auto"
-              type="text"
-              placeholder="Down Payment in %"
-              name="down-payment"
-              required
-              step="1"
-              min="0"
-            />
-          </div>
+                <div class="col-sm-10 mx-auto input-group">
+                    <button type="button" class="help-btn" data-tooltip="Enter the down payment porcentage (10,20...)">
+                        ?
+                    </button>
+                    <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text"
+                        placeholder="Down Payment in %" name="down-payment" required step="1" min="0" />
+                </div>
 
-          <div class="col-sm-10 mx-auto input-group">
-            <button
-              type="button"
-              class="help-btn"
-              data-tooltip="Enter the interest rate (6.5, 7.24)"
-            >
-              ?
-            </button>
-            <input
-              class="form-control form-control-sm mb-3 w-50 mx-auto"
-              type="text"
-              placeholder="Interest Rate"
-              name="interest-rate"
-              required
-              step="0.01"
-              min="0"
-            />
-          </div>
+                <div class="col-sm-10 mx-auto input-group">
+                    <button type="button" class="help-btn" data-tooltip="Enter the interest rate (6.5, 7.24)">
+                        ?
+                    </button>
+                    <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text"
+                        placeholder="Interest Rate" name="interest-rate" required step="0.01" min="0" />
+                </div>
 
-          <h1 style="font-family: 'Dancing Script'">Additional(no required)</h1>
+                <h1 style="font-family: 'Dancing Script'">Additional(no required)</h1>
 
-          <div class="col-sm-10 mx-auto input-group">
-            <button
-              type="button"
-              class="help-btn"
-              data-tooltip="Enter the monthly property taxes (560, 400)"
-            >
-              ?
-            </button>
-            <input
-              class="form-control form-control-sm mb-3 w-50 mx-auto"
-              type="text"
-              placeholder="Property Taxes"
-              name="property-taxes"
-            />
-          </div>
+                <div class="col-sm-10 mx-auto input-group">
+                    <button type="button" class="help-btn" data-tooltip="Enter the monthly property taxes (560, 400)">
+                        ?
+                    </button>
+                    <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text"
+                        placeholder="Property Taxes" name="property-taxes" />
+                </div>
 
-          <div class="col-sm-10 mx-auto input-group">
-            <button
-              type="button"
-              class="help-btn"
-              data-tooltip="Enter the monthly home insurance (123)"
-            >
-              ?
-            </button>
-            <input
-              class="form-control form-control-sm mb-3 w-50 mx-auto"
-              type="text"
-              placeholder="Home insurance"
-              name="home-insurance"
-            />
-          </div>
+                <div class="col-sm-10 mx-auto input-group">
+                    <button type="button" class="help-btn" data-tooltip="Enter the monthly home insurance (123)">
+                        ?
+                    </button>
+                    <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text"
+                        placeholder="Home insurance" name="home-insurance" />
+                </div>
 
-          <div class="col-sm-10 mx-auto input-group">
-            <button
-              type="button"
-              class="help-btn"
-              data-tooltip="Enter the estimated closing cost ex (2000)"
-            >
-              ?
-            </button>
-            <input
-              class="form-control form-control-sm mb-3 w-50 mx-auto"
-              type="text"
-              placeholder="Closing Cost"
-              name="closing-cost"
-            />
-          </div>
+                <div class="col-sm-10 mx-auto input-group">
+                    <button type="button" class="help-btn" data-tooltip="Enter the estimated closing cost ex (2000)">
+                        ?
+                    </button>
+                    <input class="form-control form-control-sm mb-3 w-50 mx-auto" type="text" placeholder="Closing Cost"
+                        name="closing-cost" />
+                </div>
 
-          <button type="submit" class="calculate-btn">calculate</button>
-        </form>
-      </div>
+                <button type="submit" class="calculate-btn">calculate</button>
+            </form>
+        </div>
     </div>
 
     <div class="results-section">
-      <div class="results-title" style="font-family: 'Dancing Script'">
-        Results....
-      </div>
-      <div class="results-text" style="font-family: Raleway"></div>
+        <div class="results-title" style="font-family: 'Dancing Script'">
+            Results....
+        </div>
+        <div class="results-text" style="font-family: Raleway"></div>
     </div>
     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-section">
-          <h3>Contact Us</h3>
-          <p>Phone: (555) 123-4567</p>
-          <p>Email: info@venushomeloansolutions.com</p>
-          <p>Address: 123 Main St, Miami, FL 33101</p>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Phone: +1 (551) 342 9810</p>
+                <p>Email: yramos.loans@gmail.com</p>
+                <p>Address: 7790 NW 55th St, Doral, FL 33166</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal Notice</h3>
+                <p>Venus Home Loan Solutions is the personal brand of Yelina Ramos, Mortgage Loan Originator (NMLS #
+                    2685559). All mortgage loan originations are offered through and under the sponsorship of Fast Loans
+                    & Mortgages, LLC (NMLS # 2424324), Equal Housing Opportunity.</p>
+            </div>
         </div>
 
-        <div class="footer-section">
-          <h3>Legal Notice</h3>
-          <p>
-            Venus Home Loan Solutions is the personal brand of Yelina Ramos,
-            Mortgage Loan Originator (NMLS # 2685559). All mortgage loan
-            originations are offered through and under the sponsorship of Fast
-            Loans & Mortgages, LLC (NMLS # 2424324), Equal Housing Opportunity.
-          </p>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Venus Home Loan Solutions. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://facebook.com/venushomeloans">Facebook</a> |
+                <a href="https://youtube.com/@yelinaramos-rp7hl?si=7K24O9hF6ZxIoGt7">Youtube</a> |
+                <a href="https://www.instagram.com/homeloans_yelina?igsh=MXhsMXhmYnhsenRyYQ==">Instagram</a>
+            </div>
         </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2025 Venus Home Loan Solutions. All rights reserved.</p>
-        <div class="social-links">
-          <a href="https://www.facebook.com/profile.php?id=61580190853662">Facebook</a>
-          |
-          <a href="https://youtube.com/@yelinaramos-rp7hl?si=7K24O9hF6ZxIoGt7">Youtube</a>
-          |
-          <a href="https://www.instagram.com/homeloans_yelina?igsh=MXhsMXhmYnhsenRyYQ==">Instagram</a>
+        <div class="footer-bottom">
+            <p style="font-size: xx-small;">
+                Boost your business with websites, e-commerces and more with RenSher Enterprises LLC. <br>
+                <a href="mailto:RenSherEnterprisesL LC@gmail.com?subject=Inquiry%20About%20Web%20Development%20Services&body=Hello%2C%20I%27m%20interested%20in%20your%20web%20development%20services%21"
+                    class="cta-btn">Email Us</a>
+            </p>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p style="font-size: xx-small">
-          Boost your business with websites, e-commerces and more with RenSher
-          Enterprises LLC. <br />
-          <a href="mailto:RenSherEnterprisesL LC@gmail.com?subject=Inquiry%20About%20Web%20Development%20Services&body=Hello%2C%20I%27m%20interested%20in%20your%20web%20development%20services%21"
-            class="cta-btn">Email Us</a>
-        </p>
-      </div>
     </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

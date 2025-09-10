@@ -278,22 +278,29 @@ h1 {
 @media (max-width: 768px) {
   .service-content {
     display: grid;
-    align-items: center;
     max-width: 100%;
+    align-items: left; 
   }
     .dropdown-link.text-services {
-    display: block;
-    text-align: center;
+    display: grid;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
     font-size: small;
+    
   }
-  .mobile-services-heading{
-  display:grid;
+  .dropdown-link{
+    text-align: left;
+    margin-left: 0;   /* Puedes cambiar 10vw por el valor que prefieras */
+    margin-right: 10vw;
+    padding-right: 100%;
+
   }
- 
+  .dropdown-services-list {
+  align-items: center;
+  margin-left: 10%;
+ }
  
   .services-img {
     display: none;
@@ -301,6 +308,17 @@ h1 {
   .dekstop-services-heading{
     display: none;
 
+  }
+  .mobile-services-heading{
+  display:grid;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-section {
+    margin: 10px 0;
   }
 }
 
@@ -515,22 +533,7 @@ footer ul {
   color: #3498db;
 }
 
-@media (max-width: 600px) {
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .footer-section {
-    margin: 10px 0;
-  }
-  .dropdown-services-list {
-  align-items: center;
-  margin-left: 10%;
- }
- .text-services {
-  font-size: large;
-}
-}
+
 
 .menu-toggle {
   display: none;
