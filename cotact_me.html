@@ -1,133 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <title>Venus Loan Solutions</title>
-    <link rel="stylesheet" href="style\style.css" />
-  </head>
-  <body>
-    <header class="fixed-header">
-      <div class="container">
-        <h1 class="logo_1">Venus Home</h1>
-        <h2 class="logo_2">LOAN SOLUTIONS</h2>
-      </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Finance Tools</a>
-            <ul class="dropdown-menu">
-              <li><a href="rent_buy.html">Rent or buy?</a></li>
-              <li><a href="refinancing.html"> Refinancing</a></li>
-              <li><a href="mortgage.html"> Mortgage </a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <!-- hide until open in movil -->
-      <nav class="mobile-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rent_buy.html">Rent or buy?</a></li>
-          <li><a href="refinancing.html">Refinancing</a></li>
-          <li><a href="mortgage.html">Mortgage</a></li>
-        </ul>
-      </nav>
-      <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
-    </header>
 
-    <section class="contact-section">
-   
-      <p style="font-family: Raleway">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <title>Venus Loan Solutions</title>
+     <link rel="stylesheet" href="style\style.css" />
+</head>
+
+<body>
+  <header class="fixed-header">
+    <div class="container">
+      <h1 class="logo_1">Venus Home</h1>
+      <h2 class="logo_2">LOAN SOLUTIONS</h2>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Finance Tools</a>
+          <ul class="dropdown-menu">
+            <li><a href="rent_buy.html">Rent or buy?</a></li>
+            <li><a href="refinancing.html"> Refinancing</a></li>
+            <li><a href="mortgage.html"> Mortgage </a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- hide until open in movil -->
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rent_buy.html">Rent or buy?</a></li>
+        <li><a href="refinancing.html">Refinancing</a></li>
+        <li><a href="mortgage.html">Mortgage</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+  </header>
+
+
+  <section class="contact-section">
+    <div>
+
+      <p style="font-family: Raleway; margin-top:5%">
         Let me know in your mail when is better for you have an appoiment or if
         you have any doubt about my services, I will answer you with plasure.
         Have a good one!
       </p>
+    </div>
+  </section>
 
-      <form id="contactForm" class="contact-form">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-outline-success submit-btn">
-          Sent
-        </button>
-      </form>
-    </section>
+  <section class="form_contact">
+    <form id="contactForm" class="contact-form" method="POST" action="send_email.php">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+     
+      <button type="submit" class="btn btn-outline-success submit-btn">
+        Sent
+      </button>
+    </form>
+  </section>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Phone: +1 (551) 342 9810</p>
-                <p>Email: yramos.loans@gmail.com</p>
-                <p>Address: 7790 NW 55th St, Doral, FL 33166</p>
-            </div>
-    
-            <div class="footer-section">
-                <h3>Legal Notice</h3>
-                <p>Venus Home Loan Solutions is the personal brand of Yelina Ramos, Mortgage Loan Originator (NMLS #
-                    2685559). All mortgage loan originations are offered through and under the sponsorship of Fast Loans &
-                    Mortgages, LLC (NMLS # 2424324), Equal Housing Opportunity.</p>
-            </div>
-        </div>
-    
-        <div class="footer-bottom">
-            <p>&copy; 2025 Venus Home Loan Solutions. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://facebook.com/venushomeloans">Facebook</a> |
-                <a href="https://youtube.com/@yelinaramos-rp7hl?si=7K24O9hF6ZxIoGt7">Youtube</a> |
-                <a href="https://www.instagram.com/homeloans_yelina?igsh=MXhsMXhmYnhsenRyYQ==">Instagram</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p style="font-size: xx-small;">
-                Boost your business with websites, e-commerces and more with RenSher Enterprises LLC. <br>
-                <a href="mailto:RenSherEnterprisesL LC@gmail.com?subject=Inquiry%20About%20Web%20Development%20Services&body=Hello%2C%20I%27m%20interested%20in%20your%20web%20development%20services%21"
-                    class="cta-btn">Email Us</a>
-            </p>
-        </div>
-    </footer>
-    <script>
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          const name = document.getElementById("name").value;
-          const message = document.getElementById("message").value;
-          const mailto = `mailto:sherlynballestero@gmail.com?subject=New Contact Form Submission from ${encodeURIComponent(
-            name
-          )}&body=Name: ${encodeURIComponent(
-            name
-          )}%0AMessage:%0A${encodeURIComponent(message)}`;
-          window.location.href = mailto;
-        });
-      //menu change form to movil adjustment
-      const menuToggle = document.querySelector(".menu-toggle");
-      const mobileNav = document.querySelector(".mobile-nav");
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Phone: +1 (551) 342 9810</p>
+        <p>Email: yramos.loans@gmail.com</p>
+        <p>Address: 7790 NW 55th St, Doral, FL 33166</p>
+      </div>
 
-      menuToggle.addEventListener("click", () => {
-        mobileNav.classList.toggle("active");
-      });
+      <div class="footer-section">
+        <h3>Legal Notice</h3>
+        <p>Venus Home Loan Solutions is the personal brand of Yelina Ramos, Mortgage Loan Originator (NMLS #
+          2685559). All mortgage loan originations are offered through and under the sponsorship of Fast Loans &
+          Mortgages, LLC (NMLS # 2424324), Equal Housing Opportunity.</p>
+      </div>
+    </div>
 
-      const dropdownToggle = document.querySelector(".dropdown-toggle");
-      const dropdownMenu = document.querySelector(".dropdown-menu");
-      dropdownToggle.addEventListener("click", function (e) {
-        e.preventDefault();
-        dropdownMenu.style.display =
-          dropdownMenu.style.display === "block" ? "none" : "block";
-      });
-    </script>
-  </body>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Venus Home Loan Solutions. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://facebook.com/venushomeloans">Facebook</a> |
+        <a href="https://youtube.com/@yelinaramos-rp7hl?si=7K24O9hF6ZxIoGt7">Youtube</a> |
+        <a href="https://www.instagram.com/homeloans_yelina?igsh=MXhsMXhmYnhsenRyYQ==">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="font-size: xx-small;">
+        Boost your business with websites, e-commerces and more with RenSher Enterprises LLC. <br>
+        <a href="mailto:RenSherEnterprisesL LC@gmail.com?subject=Inquiry%20About%20Web%20Development%20Services&body=Hello%2C%20I%27m%20interested%20in%20your%20web%20development%20services%21"
+          class="cta-btn">Email Us</a>
+      </p>
+    </div>
+  </footer>
+  <script>
+   
+    //menu change form to movil adjustment
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mobileNav = document.querySelector(".mobile-nav");
+
+    menuToggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("active");
+    });
+
+    const dropdownToggle = document.querySelector(".dropdown-toggle");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+    dropdownToggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      dropdownMenu.style.display =
+        dropdownMenu.style.display === "block" ? "none" : "block";
+    });
+  </script>
+</body>
+
 </html>
