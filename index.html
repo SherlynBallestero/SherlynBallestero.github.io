@@ -1,179 +1,130 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Venus Loan Solutions</title>
-    <link rel="stylesheet" href="style\style.css">
-   
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sherlyn Ballestero Cruz | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>  <!-- Link to your CSS file -->
 </head>
 <body>
-   
-<header class="fixed-header">
-  
-    <div class="container">
-        <h1 class="logo_1">Venus Home</h1>
-        <h2 class="logo_2">LOAN SOLUTIONS</h2>
-    </div>
-    <nav class="main-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#pre-services">Services</a></li>
-            <li><a href="#mission">My Mission</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">Finance Tools</a>
-                <ul class="dropdown-menu">
-                    <li><a href="rent_buy.html">Rent or buy?</a></li>
-                    <li><a href="refinancing.html"> Refinancing</a></li>
-                    <li><a href="mortgage.html"> Mortgage </a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <!-- hide until open in movil -->
-    <nav class="mobile-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#mission">My Mission</a></li>
-            <li><a href="rent_buy.html">Rent or buy?</a></li>
-            <li><a href="refinancing.html">Refinancing</a></li>
-            <li><a href="mortgage.html">Mortgage</a></li>
-        </ul>
-    </nav>
-    <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
-</header>
 
-<section class="hero">
+  <!-- Hero -->
+  <header class="hero">
     <div class="hero-content">
-        <img src="images/yelina.jpg" alt="Mortgage Broker" class="hero-image">
+      <h1>Sherlyn Ballestero Cruz</h1>
+      <p class="subtitle">Computer Science Student | Full-Stack Developer | AI & Robotics Enthusiast | Web Designer</p>
+      <p class="description">
+        Building solutions with code, intuitive design, and a passion for AI. Python, Django & more.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="https://github.com/SherlynBallestero" target="_blank" class="btn secondary">GitHub</a>
+        <a href="mailto:your.email@example.com" class="btn secondary">Contact</a>
+      </div>
     </div>
-</section>
+  </header>
 
-<section id="pre-services" class="first_part animate-on-scroll" id="text-section">
-    <div class="presentation-content animated-text">
-        <p class="raleway-typing"><strong>Meet Yelina Ramos, your trusted mortgage broker!</strong> <br>
-            With a passion for turning dreams into reality, I’m here to guide you every step of <br>
-            the way to your perfect home,offering tailored solutions that fit your unique journey. <br>
-            <strong>Reserve an appointment today</strong> for a non-cost pre-qualification.<br></p>
-            
-        <a href="cotact_me.html"; class="get-started">Make an Appoiment</a>
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm Sherlyn, a Computer Science student. I started my journey at Matcom (Cuba) and now continue at Park University (USA). 
+          I love solving real-world problems with technology: full-stack development, artificial intelligence, robotics, and creating beautiful, functional interfaces.
+        </p>
+        <p>
+          Key skills: Python, Django, JavaScript, React, Tailwind CSS, Figma, Git, databases, and exploring AI & robotics.
+        </p>
+        <p>Always learning, building, and aiming to make a positive impact.</p>
+      </div>
+      <div class="about-image">
+        <!-- Replace with your real photo -->
+        <img src="images/gc.jpg" alt="Sherlyn Ballestero" />
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="services" class="services-part  animate-on-scroll">
-    <h2  style="font-family: 'Dancing Script';  text-align: center; color: white;" class="dekstop-services-heading">Discover our Services </h2>
-    <h2  style="font-family: 'Dancing Script';  text-align: center; color: white;" class="mobile-services-heading">Services </h2>
-    <div  class="service-content">
-        
-        <div class="service-text-div">
-            <ul class="dropdown-services-list">
-                <li>
-                    <a href="#" class="dropdown-link text-services">Loan Program Guidance</a>
-                    <div class="dropdown-content text-services" style="display:none;">
-                    Find the perfect loan—FHA, VA, USDA, conventional, or first-time buyer programs—with local incentives like Florida’s Hometown Heroes.
-                    </div>
-                </li>
-                <li>
-                    <a href="#" class="dropdown-link text-services">Rate Quotes & Comparisons</a>
-                    <div class="dropdown-content text-services" style="display:none;">
-                    Compare interest rates, points, and payments to decide if now’s the time to buy or refinance.
-                    </div>
-                </li>
-                <li>
-                    <a href="#" class="dropdown-link text-services">Mortgage Process Management</a>
-                    <div class="dropdown-content text-services" style="display:none;">
-                    We handle the paperwork and timelines, coordinating with processors and agents to meet your closing deadlines.
-                    </div>
-                </li>
-                <li>
-                    <a href="#" class="dropdown-link text-services">Financial Education & Support</a>
-                    <div class="dropdown-content text-services" style="display:none;">
-                    Understand PMI, escrow, and more with step-by-step guidance and answers every step of the way.
-                    </div>
-                </li>
-            </ul>
+  <!-- Projects -->
+  <section id="projects" class="section projects-section">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <!-- Example from your GitHub -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/600x400?text=Domino+Game" alt="Domino Game" class="project-img" />
+        <div class="project-info">
+          <h3>Domino Game</h3>
+          <p>A classic domino game implementation.</p>
+          <div class="tags">
+            <span>C#</span>
+          </div>
+          <a href="https://github.com/SherlynBallestero/DominoGame" target="_blank" class="project-link">View on GitHub →</a>
         </div>
-        <div class="service-imag-div">
-            <img src="images/services.jpg" alt="services imgage" class="services-img">
+      </div>
+
+      <div class="project-card">
+        <img src="https://via.placeholder.com/600x400?text=Moogle+Search" alt="Moogle" class="project-img" />
+        <div class="project-info">
+          <h3>Moogle (Search Engine Project)</h3>
+          <p>Programming I course project – search engine prototype.</p>
+          <div class="tags">
+            <span>C#</span>
+          </div>
+          <a href="https://github.com/SherlynBallestero/moogle-2021" target="_blank" class="project-link">View on GitHub →</a>
         </div>
+      </div>
 
-    </div> 
-</section>
-
-
-<section id="mission" class="third_part animate-on-scroll" >
-    <h2 style="font-family: 'Dancing Script';  text-align: center; color:black">My Mission </h2>
-    <div class="mission-content">
-        <div class="mission-image">
-            <img src="images/my_goals.jpg" alt="woman and house" class="mission-img">
+      <!-- Add more cards for other repos or upcoming AI projects -->
+      <div class="project-card placeholder">
+        <img src="https://via.placeholder.com/600x400?text=AI+Project" alt="AI" class="project-img" />
+        <div class="project-info">
+          <h3>AI / Robotics Exploration</h3>
+          <p>Current interests in AI, machine learning, and robotics (coming soon).</p>
+          <div class="tags">
+            <span>Python</span>
+            <span>AI</span>
+          </div>
+          <a href="https://github.com/SherlynBallestero" target="_blank" class="project-link">Explore Repos →</a>
         </div>
-        <div class="mission-text">
-            
-            <p class="text-services" style="color: black;">I’m Yelina Ramos, your dedicated mortgage broker and processor, committed to being your ally in securing the best mortgage for your unique needs. With  passion for helping clients, I simplify the process, offer competitive rates, and provide personalized guidance every step of the way. My goal is to turn your homeownership dreams into reality with transparency and care. Let’s work together to find the perfect mortgage solution
-            <a href="mailto:yramos.loans@gmail.com?subject=Mortgage%20Inquiry&body=Hello%2C%20I%27d%20like%20to%20discuss%20my%20mortgage%20options%21" class="cta-btn">contact me today to know about your options</a>!</p>
-        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="houses-section">
-   
-    <div class="houses-container">
-        <img src="images/houses.png" alt="houses" class="houses-img">
-    </div>
-</section>
-
-<section class="clients-section">
-    <div class="clients-container">
-        <div class="client-image">
-         <img src="images/clients1.jpg" alt="Happy Clients 1" class="client-img" id="auto-img">
-        </div>
-    <div class="clients-text">
-        <h2>Happy clients!</h2>
-    </div>
-</section>
-
-
-
-<section class="finl-seccion">
-    <div class="finl-seccion">
-        <p style="font-family:  'Dancing Script', cursive;"> Info...VenusLoanSolutions llc</p>
-    </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-section">
-      <h3>Contact Us</h3>
-      <p>Phone: +1 (551) 342 9810</p>
-      <p>Email: yramos.loans@gmail.com</p>
-      <p>Address: 7790 NW 55th St, Doral, FL 33166</p>
-    </div>
+  <!-- Web Designs -->
+  <section id="web-designs" class="section">
+    <h2>Web Designs & UI/UX</h2>
+    <p class="section-intro">Selection of my visual creations: landing pages, interfaces, and prototypes that blend aesthetics and usability.</p>
     
-    <div class="footer-section">
-      <h3>Legal Notice</h3>
-      <p>Venus Home Loan Solutions is the personal brand of Yelina Ramos, Mortgage Loan Originator (NMLS # 2685559). All mortgage loan originations are offered through and under the sponsorship of Fast Loans & Mortgages, LLC (NMLS # 2424324), Equal Housing Opportunity.</p>
-    </div>
-  </div>
-  
-  <div class="footer-bottom">
-      <p>&copy; 2025 Venus Home Loan Solutions. All rights reserved.</p>
-      <div class="social-links">
-          <a href="https://facebook.com/venushomeloans">Facebook</a> |
-          <a href="https://youtube.com/@yelinaramos-rp7hl?si=7K24O9hF6ZxIoGt7">Youtube</a> |
-          <a href="https://www.instagram.com/homeloans_yelina?igsh=MXhsMXhmYnhsenRyYQ==">Instagram</a>
+    <div class="designs-grid">
+      <!-- Add your real designs here when you share links/images -->
+      <div class="design-card">
+        <img src="https://via.placeholder.com/600x900?text=Web+Design+Example+1" alt="Design 1" class="design-img" />
+        <div class="design-overlay">
+          <h3>Design Name</h3>
+          <p>Figma • Modern • 2025</p>
         </div>
+      </div>
+
+      <!-- Repeat for each design you provide -->
     </div>
-<div class="footer-bottom">
-    <p style="font-size: xx-small;">
-    Boost your business with websites, e-commerces and more with RenSher Enterprises LLC. <br>
-<a href="mailto:RenSherEnterprisesL LC@gmail.com?subject=Inquiry%20About%20Web%20Development%20Services&body=Hello%2C%20I%27m%20interested%20in%20your%20web%20development%20services%21" class="cta-btn">Email Us</a></p> 
-</div>
-</footer>
+  </section>
 
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <h2>Let's Connect</h2>
+    <p>Open to freelance projects, AI/web dev internships, or just chatting about code and design.</p>
+    <div class="social-icons">
+      <a href="https://github.com/SherlynBallestero" target="_blank"><i class="fab fa-github"></i></a>
+      <!-- Add LinkedIn if you have: <a href="YOUR_LINKEDIN"><i class="fab fa-linkedin"></i></a> -->
+      <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://x.com/rene_y_sherlyn" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
 
- <script src="script.js"></script>
+  <footer>
+    © 2026 Sherlyn Ballestero Cruz – Built with code, curiosity, and tons of coffee
+  </footer>
+
 </body>
 </html>
